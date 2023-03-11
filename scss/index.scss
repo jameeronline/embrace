@@ -1,0 +1,61 @@
+//Build in modules
+@use "sass:map";
+
+//Theme specific variables
+$theme-body-font-family: 'Inter';
+
+$theme-primary: hsl(227, 100%, 60%);
+$theme-secondary: hsl(0, 0%, 20%);
+
+$theme-container-width: 80rem;
+
+//Site Specific variables
+$light-gray: hsl(0, 0%, 98%);
+$body-font-color: hsl(0, 0%, 40%);
+
+$theme-font-size-base: 1rem;
+
+
+@use "sprucecss/scss/spruce" as * with (
+  //Settings
+  $settings: (
+    color-fallback: true,
+    html-smooth-scrolling: true,
+    hyphens: false,
+    prefix: "embrace",
+    utilities: true,
+    print: true,
+  ),
+  //Colors
+  $color-primary: $theme-primary,
+  $color-secondary: $theme-secondary,
+  $colors: (
+    base:(
+      text: $body-font-color
+    ),
+    custom: (
+      bg-varient-1: hsl(0, 0%, 98%),
+      bg-varient-2: hsl(231, 100%, 99%),
+      bg-varient-3: hsl(248, 27%, 17%),
+      default-white: hsl(0 0% 100%),
+      default-black: hsl(0 0% 0%),
+    )
+  ),
+  //typography
+  $font-sizes: (
+    lead: $theme-font-size-base * 1.125,
+  ),
+  //Container max-width
+  $container-width: $theme-container-width
+);
+
+//Typography
+$font-family-base: $theme-body-font-family, $font-family-base;
+$font-family-heading: $font-family-base;
+
+//Vendor or Plugins
+@use "vendor" as *;
+@use "components" as *;
+@use "sections" as *;
+@use "utilities" as *;
+

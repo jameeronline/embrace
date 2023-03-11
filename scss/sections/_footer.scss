@@ -1,0 +1,124 @@
+@use "sprucecss/scss/spruce" as *;
+
+.site-footer{
+  $this: &;
+
+  &__col{
+    display: flex;
+
+    &--column{
+      flex-direction: column;
+    }
+
+    &--row{
+      gap: spacer(xxl);
+    }
+  }
+
+  &__primary{
+    background-color: color(bg-varient-1, custom);
+    padding-block: spacer(l);
+
+    .container{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    #{$this}__logo{
+      margin-block-end: spacer(s);
+    }
+
+    #{$this}__socials{
+      ul{
+        @include clear-list;
+        display: flex;
+        gap: spacer(m);
+        margin-block: spacer(m);
+
+        > li + li{
+          margin-block-start: 0;
+        }
+      }
+
+      a{
+        font-size: font-size(h6);
+      }
+
+      svg{
+        font-size: font-size(h4)
+      }
+    }
+
+    #{$this}__links{
+      @include clear-list;
+      @include layout-stack(m, $align: left);
+
+      a{
+        @include set-css-variable((
+          --text-color: color(default-black, custom),
+          --text-decoration: none
+        ));
+
+        font-weight: 500;
+        color: get-css-variable(--text-color);
+        text-decoration: get-css-variable(--text-decoration);
+
+        &:hover{
+          @include set-css-variable((
+            --text-color: color(primary),
+            --text-decoration: underline
+          ))
+        }
+      }
+    }
+
+    address{
+      color: color(default-black, custom);
+      font-style: normal;
+    }
+  }
+
+
+  &__secondary{
+    color: color(default-white, custom);
+    padding-block: spacer(l);
+    background-color: color(secondary);
+
+    .container{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    p{
+      margin: 0;
+    }
+
+    ul{
+      @include clear-list;
+      display: flex;
+      align-items: center;
+      gap: spacer(xxl);
+
+      > li + li{
+        margin-block-start: 0;
+      }
+    }
+
+    a{
+      @include set-css-variable((
+        --text-decoration: none
+      ));
+
+      color: color(default-white, custom);
+      text-decoration: get-css-variable(--text-decoration);
+
+      &:hover{
+        @include set-css-variable((
+          --text-decoration: underline
+        ));
+      }
+    }
+  }
+}

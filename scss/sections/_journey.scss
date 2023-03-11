@@ -1,0 +1,37 @@
+//Build in Modules
+@use "sprucecss/scss/spruce" as *;
+
+.section-journey{
+  $this: &;
+  padding-block: spacer(l);
+  background-color: color(primary);
+  background-image: url(../img/journey-mask-group.svg);
+  background-position: left center;
+  background-repeat: no-repeat;
+
+  .container{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: spacer(xxxl);
+  }
+
+  h2{
+    color: color(default-white, custom);
+    font-size: responsive-font-size(2.5rem);;
+    font-weight: 500;
+    margin: 0;
+    flex: 1 1 100%;
+  }
+
+  p{
+    color: color(default-white, custom);
+    font-size: font-size(lead, false);
+    margin: 0;
+    margin-block-end: spacer(l);
+  }
+
+  a{
+    color: color(default-white, custom);
+  }
+}

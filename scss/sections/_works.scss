@@ -1,0 +1,50 @@
+//Build in Modules
+@use "sprucecss/scss/spruce" as *;
+
+.works{
+  $this: &;
+  text-align: center;
+  padding-block: spacer(xxl);
+
+  &__content{
+    max-width: 70%;
+    margin-inline: auto;
+
+    h2{
+      font-size: font-size(h1);
+      margin: 0;
+      margin-block-end: spacer(s);
+    }
+
+    p{
+      font-size: font-size(lead, false);
+      margin: 0;
+      margin-block-end: spacer(l);
+    }
+
+    img{
+      border-radius: spacer(l);
+    }
+  }
+
+  &__grid{
+    @include layout-grid(m);
+    margin-block-end: spacer(l);
+
+    img{
+      border-radius: spacer(l);
+      margin-block-end: spacer(s);
+    }
+
+    h6{
+      font-size: responsive-font-size(1.75rem);;
+      margin: 0;
+      margin-block-end: spacer(xs);
+    }
+
+    p{
+      margin-block: 0;
+      line-height: $line-height-md;
+    }
+  }
+}

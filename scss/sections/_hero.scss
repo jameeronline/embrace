@@ -1,0 +1,61 @@
+//Build in Modules
+@use "sass:color";
+
+@use "sprucecss/scss/spruce" as *;
+
+.hero{
+  .container{
+    display: flex;
+    padding-block: spacer(l);
+    padding-inline: 0;
+  }
+
+  &__description{
+    flex: 1 0;
+    margin-inline: 0 calc(spacer(xxl) + spacer(xl));
+
+    @include breakpoint(md){
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+
+  &__image{
+    flex: 1 0;
+  }
+
+  &__form{
+    display: flex;
+    flex-direction: column;
+    gap: spacer(xs);
+    margin-top: spacer(l);
+
+    @include breakpoint(sm){
+      flex-direction: row;
+      gap: spacer(s)
+    }
+  }
+
+  .form{
+
+    &-group{
+      flex: 1 0;
+    }
+
+    &-control{
+      background-color: color.scale($color-gray-light, $lightness: 60%);
+      border: none;
+      border-radius: 9999px;
+      padding: spacer(s) spacer(m);
+    }
+  }
+
+  h1{
+    font-size: 5.375rem;
+  }
+
+  p{
+    line-height: 2;
+  }
+}

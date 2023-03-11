@@ -1,0 +1,23 @@
+//Modules
+@use "sprucecss/scss/spruce" as *;
+
+// Image Utilities
+.img-rounded-sm{
+  border-radius: spacer(xxs);
+}
+
+.img-rounded-md{
+  border-radius: spacer(xs);
+}
+
+.img-rounded-lg{
+  border-radius: spacer(s);
+}
+
+.img-rounded-xl{
+  border-radius: spacer(m);
+}
+
+.img-rounded-full{
+  border-radius: 9999px;
+}

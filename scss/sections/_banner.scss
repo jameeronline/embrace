@@ -1,0 +1,58 @@
+//Build in Modules
+@use "sprucecss/scss/spruce" as *;
+
+.section-banner{
+  $this: &;
+  padding-block: spacer(xxl);
+
+  @include set-css-variable((
+    --bg-color: hsl(248, 28%, 17%),
+    --highlight-color: hsl(68, 100%, 57%)
+  ));
+
+  .container{
+    display: flex;
+    justify-content: space-between;
+    gap: spacer(xxl);
+    padding-block: spacer(l);
+    padding-inline: spacer(xxl);
+    border-radius: spacer(l);
+    background-color: get-css-variable(--bg-color);
+  }
+
+  &__content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-block: spacer(m);
+
+    h2{
+      color: color(default-white, custom);
+      font-size: responsive-font-size(3rem);
+      font-weight: 500;
+      margin: 0;
+      margin-block-end: spacer(s);
+    }
+
+    .btn{
+      padding-inline: 3rem;
+    }
+  }
+
+  &__cirlce{
+    flex: none;
+    width: 20rem;
+    height: 20rem;
+    background-color: get-css-variable(--highlight-color);
+    border-radius: 9999px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    svg{
+      color: color(primary);
+      font-size: 10rem;
+    }
+  }
+}

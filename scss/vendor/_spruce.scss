@@ -1,0 +1,11 @@
+//Build in modules
+@use "sass:map";
+
+//Plugin Modules
+@use "sprucecss/scss/spruce" as *;
+
+//initial CSS for elements(normalize, roots, color, fonts)
+@include generate-content;
+
+//initial CSS for form elements
+@include generate-form;

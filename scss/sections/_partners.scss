@@ -1,0 +1,41 @@
+//Build in Modules
+@use "sass:color";
+
+@use "sprucecss/scss/spruce" as *;
+
+.partners{
+  padding-block: spacer(xxl);
+  background-color: color('bg-varient-1', 'custom');
+
+  &__header{
+    display: flex;
+    gap: spacer(m) + spacer(xs);
+    max-width: 60%;
+    margin-bottom: spacer(xxl);
+    row-gap: get-css-variable(--container-gap);
+
+    h2{
+      flex: 1 0 40%;
+      font-size: font-size(h1);
+      margin: 0;
+    }
+
+    p{
+      flex: 1 0 60%;
+      margin: 0;
+    }
+  }
+
+  &__logos{
+    ul{
+      list-style: none;
+      padding: 0;
+      @include layout-grid(s);
+      row-gap: spacer(xl);
+    }
+
+    li{
+      margin-block-start: 0;
+    }
+  }
+}

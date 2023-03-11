@@ -1,0 +1,113 @@
+@use "sprucecss/scss/spruce" as *;
+
+.site{
+
+  &__header{
+    > .container{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-block: spacer(m);
+      padding-inline: 0;
+    }
+  }
+
+  &-navigation{
+    position: fixed;
+    inset: 0;
+    padding: spacer(m);
+    background-color: color(background);
+    max-width: spacer(xxxl) * 2;
+    transform: translateX(-100%);
+    border-bottom-right-radius: spacer(l);
+    box-shadow: 0 spacer(xxs) spacer(s) hsla(0 0% 0% / 10%);
+    @include transition;
+
+    @include breakpoint(md){
+      position: initial;
+      padding: initial;
+      max-width: none;
+      box-shadow: none;
+      transform: none;
+      background-color: transparent;
+    }
+
+    &.opened{
+      z-index: 1;
+      transform: translateX(0);
+    }
+
+    &__backdrop{
+      position: fixed;
+      inset: 0;
+      background-color: hsla(0 0% 0% / 20%);
+      z-index: 0;
+    }
+
+    ul{
+      display: flex;
+      flex-direction: column;
+      list-style: none;
+      align-items: center;
+      padding-inline: 0;
+      gap: spacer(s);
+
+      @include breakpoint(md){
+        flex-direction: row;
+        gap: spacer(l);
+      }
+    }
+
+    &__item{
+      margin-block: 0;
+
+      a{
+        color: color(heading);
+        font-weight: $btn-font-weight;
+        display: inline-flex;
+        text-decoration: none;
+        padding: spacer(xxs) spacer(s);
+
+        &:hover{
+          color: color(primary);
+          background-color: color(code-background);
+        }
+      }
+
+      &.active a{
+        color: color(primary);
+        background-color: color(code-background);
+      }
+    }
+
+    &__cta{
+      display: none;
+
+      @include breakpoint(md){
+        display: initial;
+      }
+    }
+
+    &__mobile-menu{
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: spacer(xs);
+      width: spacer(l);
+      height: spacer(l);
+
+      > span{
+        display: block;
+        width: calc(spacer(m) + spacer(xs));
+        height: calc(spacer(xxs) / 2);
+        background-color: color(primary);
+      }
+
+      @include breakpoint(md){
+        display: none;
+      }
+    }
+
+  }
+}

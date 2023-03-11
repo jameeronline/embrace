@@ -1,0 +1,24 @@
+{
+  "name": " ",
+  "version": "0.0.1",
+  "description": "",
+  "keywords": "",
+  "license": "",
+  "author": "",
+  "scripts": {
+    "sass:prod": "sass --load-path=node_modules --no-source-map --style=compressed scss:css",
+    "sass:dev": "sass --load-path=node_modules scss:css",
+    "build": "npm run sass:dev && parcel build index.html",
+    "dev": "parcel index.html --open",
+    "start": "npm run build && npm run dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.8.1",
+    "sass": "^1.58.1"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.3.0",
+    "sprucecss": "^1.2.1"
+  }
+}

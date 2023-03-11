@@ -1,0 +1,69 @@
+//Build in Modules
+@use "sass:color";
+@use "sprucecss/scss/spruce" as *;
+
+.section-faq{
+  $this: &;
+  padding-block: spacer(xxl);
+
+  .container{
+    display: flex;
+    justify-content: space-between;
+    gap: spacer(xxl);
+
+    > *{
+      flex: 1 1 50%;
+    }
+  }
+
+  &__content{
+    h2{
+      font-size: responsive-font-size(2.5rem);
+      margin: 0;
+      margin-block-end: spacer(s);
+    }
+
+    p{
+      font-size: font-size(lead);
+      margin: 0;
+      margin-block-end: spacer(s);
+    }
+  }
+
+  .faq__form{
+    display: flex;
+    flex-direction: column;
+    gap: spacer(xs);
+    margin-block: spacer(m) spacer(l);
+
+    @include breakpoint(sm){
+      flex-direction: row;
+      gap: spacer(s)
+    }
+  }
+
+  .form{
+    &-group{
+      flex: 1 0;
+    }
+
+    &-control{
+      background-color: color.scale($color-gray-light, $lightness: 60%);
+      border: none;
+      border-radius: 9999px;
+      padding: spacer(s) spacer(m);
+    }
+  }
+
+  .accordion-list {
+    &--boxed {
+      @include layout-stack(s);
+    }
+
+    &--stacked {
+      > * + * {
+        border-block-start: 1px solid color.scale($color-gray-light, $lightness: 10%);
+      }
+    }
+  }
+}
