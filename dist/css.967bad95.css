@@ -1795,7 +1795,7 @@ legend {
 .section-journey {
   padding-block: 3rem;
   background-color: var(--embrace-base-color-primary, hsl(227deg, 100%, 60%));
-  background-image: url(../img/journey-mask-group.svg);
+  background-image: url(/journey-mask-group.27a10b05.svg);
   background-position: left center;
   background-repeat: no-repeat;
 }
@@ -2141,4 +2141,7 @@ legend {
   border-radius: 9999px;
 }
 
-/*# sourceMappingURL=index.css.map */
+
+
+
+/*# sourceMappingURL=/css.967bad95.css.map */

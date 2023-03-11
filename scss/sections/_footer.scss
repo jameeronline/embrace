@@ -3,15 +3,21 @@
 .site-footer{
   $this: &;
 
-  &__col{
+  &__row{
+    @include set-css-variable((
+      --flex-direction: column,
+      --gap: spacer(xs)
+    ));
+
     display: flex;
+    flex-direction: get-css-variable(--flex-direction);
+    gap: get-css-variable(--gap);
 
-    &--column{
-      flex-direction: column;
-    }
-
-    &--row{
-      gap: spacer(xxl);
+    @include breakpoint(sm){
+      @include set-css-variable((
+        --flex-direction: row,
+        --gap: spacer(xxl)
+      ))
     }
   }
 
@@ -20,16 +26,18 @@
     padding-block: spacer(l);
 
     .container{
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+      @include breakpoint(md){
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
     }
 
-    #{$this}__logo{
+    @at-root #{$this}__logo{
       margin-block-end: spacer(s);
     }
 
-    #{$this}__socials{
+    @at-root #{$this}__social{
       ul{
         @include clear-list;
         display: flex;
@@ -41,18 +49,24 @@
         }
       }
 
-      a{
-        font-size: font-size(h6);
-      }
-
       svg{
-        font-size: font-size(h4)
+        font-size: font-size(h3)
       }
     }
 
     #{$this}__links{
+      @include set-css-variable((
+        --gap: spacer(xxs)
+      ));
+
       @include clear-list;
-      @include layout-stack(m, $align: left);
+      @include layout-stack(get-css-variable(--gap), $align: left);
+
+      @include breakpoint(sm){
+        @include set-css-variable((
+          --gap: spacer(m)
+        ));
+      }
 
       a{
         @include set-css-variable((
@@ -86,38 +100,60 @@
     background-color: color(secondary);
 
     .container{
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+      text-align: center;
+
+      @include breakpoint(sm){
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
     }
 
     p{
-      margin: 0;
+      margin-block-end: spacer(m);
+
+      @include breakpoint(sm){
+        margin-block-end: 0;
+      }
     }
 
     ul{
+      @include set-css-variable((
+        --flex-direction: column,
+        --gap: spacer(s)
+      ));
+
       @include clear-list;
       display: flex;
+      flex-direction: get-css-variable(--flex-direction);
       align-items: center;
-      gap: spacer(xxl);
+      justify-content: center;
+      gap: get-css-variable(--gap);
+
+      @include breakpoint(sm){
+        @include set-css-variable((
+          --flex-direction: row,
+          --gap: spacer(xxl)
+        ))
+      }
 
       > li + li{
         margin-block-start: 0;
       }
-    }
 
-    a{
-      @include set-css-variable((
-        --text-decoration: none
-      ));
-
-      color: color(default-white, custom);
-      text-decoration: get-css-variable(--text-decoration);
-
-      &:hover{
+      a{
         @include set-css-variable((
-          --text-decoration: underline
+          --text-decoration: none
         ));
+
+        color: color(default-white, custom);
+        text-decoration: get-css-variable(--text-decoration);
+
+        &:hover{
+          @include set-css-variable((
+            --text-decoration: underline
+          ));
+        }
       }
     }
   }

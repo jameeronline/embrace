@@ -10,14 +10,20 @@
     --highlight-color: hsl(68, 100%, 57%)
   ));
 
-  .container{
+  &__wrapper{
     display: flex;
-    justify-content: space-between;
-    gap: spacer(xxl);
-    padding-block: spacer(l);
-    padding-inline: spacer(xxl);
-    border-radius: spacer(l);
+    flex-direction: column;
+    align-items: center;
+    gap: spacer-clamp(l, xxl);
+    padding-block: spacer-clamp(s, l);
+    padding-inline: spacer-clamp(l, xxl);
+    border-radius: spacer-clamp(s, l);
     background-color: get-css-variable(--bg-color);
+
+    @include breakpoint(sm){
+      flex-direction: row-reverse;
+      justify-content: space-between;
+    }
   }
 
   &__content{
@@ -29,7 +35,7 @@
 
     h2{
       color: color(default-white, custom);
-      font-size: responsive-font-size(3rem);
+      font-size: responsive-font-size(3rem, 30);
       font-weight: 500;
       margin: 0;
       margin-block-end: spacer(s);
@@ -42,17 +48,17 @@
 
   &__cirlce{
     flex: none;
-    width: 20rem;
-    height: 20rem;
-    background-color: get-css-variable(--highlight-color);
+    width: spacer-clamp(xxxl, 20rem);
+    height: spacer-clamp(xxxl, 20rem);
     border-radius: 9999px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    background-color: get-css-variable(--highlight-color);
 
     svg{
       color: color(primary);
-      font-size: 10rem;
+      font-size: responsive-font-size(10rem, 50);
     }
   }
 }

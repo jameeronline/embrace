@@ -4,19 +4,35 @@
 
 .section-faq{
   $this: &;
-  padding-block: spacer(xxl);
+  padding-block: spacer(l);
+
+  @include breakpoint(md){
+    padding-block: spacer(xxl);
+  }
 
   .container{
     display: flex;
-    justify-content: space-between;
-    gap: spacer(xxl);
+    flex-direction: column;
+    gap: spacer(xl);
 
-    > *{
-      flex: 1 1 50%;
+    @include breakpoint(md){
+      flex-direction: row;
+      justify-content: space-between;
+      gap: spacer(xxl);
+
+      > *{
+        flex: 1 1 50%;
+      }
     }
   }
 
   &__content{
+    text-align: center;
+
+    @include breakpoint(md){
+      text-align: initial;
+    }
+
     h2{
       font-size: responsive-font-size(2.5rem);
       margin: 0;
