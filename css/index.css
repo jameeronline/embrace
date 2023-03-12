@@ -308,88 +308,88 @@ template {
 }
 
 :root {
-  --embrace-base-color-primary: hsl(227deg, 100%, 60%);
-  --embrace-base-color-secondary: hsl(0deg, 0%, 20%);
-  --embrace-base-color-background: hsl(0deg, 0%, 100%);
-  --embrace-base-color-heading: hsl(205deg, 100%, 2%);
-  --embrace-base-color-text: hsl(0deg, 0%, 40%);
-  --embrace-base-color-link: hsl(227deg, 100%, 60%);
+  --embrace-base-color-primary: hsl(227, 100%, 60%);
+  --embrace-base-color-secondary: hsl(0, 0%, 20%);
+  --embrace-base-color-background: hsl(0, 0%, 100%);
+  --embrace-base-color-heading: hsl(205, 100%, 2%);
+  --embrace-base-color-text: hsl(0, 0%, 40%);
+  --embrace-base-color-link: hsl(227, 100%, 60%);
   --embrace-base-color-link-hover: #0035f5;
-  --embrace-base-color-border: hsl(0deg, 0%, 90%);
-  --embrace-base-color-mark-background: hsl(50deg, 100%, 80%);
-  --embrace-base-color-mark-foreground: hsl(205deg, 100%, 2%);
-  --embrace-base-color-marker: hsl(227deg, 100%, 60%);
+  --embrace-base-color-border: hsl(0, 0%, 90%);
+  --embrace-base-color-mark-background: hsl(50, 100%, 80%);
+  --embrace-base-color-mark-foreground: hsl(205, 100%, 2%);
+  --embrace-base-color-marker: hsl(227, 100%, 60%);
   --embrace-base-color-code-background: #f0f3ff;
-  --embrace-base-color-code-foreground: hsl(205deg, 100%, 2%);
-  --embrace-base-color-blockquote-border: hsl(227deg, 100%, 60%);
+  --embrace-base-color-code-foreground: hsl(205, 100%, 2%);
+  --embrace-base-color-blockquote-border: hsl(227, 100%, 60%);
 }
 
 :root {
-  --embrace-selection-color-foreground: hsl(0deg, 0%, 100%);
-  --embrace-selection-color-background: hsl(227deg, 100%, 60%);
+  --embrace-selection-color-foreground: hsl(0, 0%, 100%);
+  --embrace-selection-color-background: hsl(227, 100%, 60%);
 }
 
 :root {
-  --embrace-alert-color-danger: hsl(0deg, 71%, 51%);
-  --embrace-alert-color-info: hsl(195deg, 100%, 42%);
-  --embrace-alert-color-success: hsl(150deg, 100%, 33%);
-  --embrace-alert-color-warning: hsl(48deg, 89%, 55%);
+  --embrace-alert-color-danger: hsl(0, 71%, 51%);
+  --embrace-alert-color-info: hsl(195, 100%, 42%);
+  --embrace-alert-color-success: hsl(150, 100%, 33%);
+  --embrace-alert-color-warning: hsl(48, 89%, 55%);
 }
 
 :root {
-  --embrace-btn-color-primary-background: hsl(227deg, 100%, 60%);
+  --embrace-btn-color-primary-background: hsl(227, 100%, 60%);
   --embrace-btn-color-primary-background-hover: #0037ff;
-  --embrace-btn-color-primary-foreground: hsl(0deg, 0%, 100%);
-  --embrace-btn-color-secondary-background: hsl(0deg, 0%, 20%);
+  --embrace-btn-color-primary-foreground: hsl(0, 0%, 100%);
+  --embrace-btn-color-secondary-background: hsl(0, 0%, 20%);
   --embrace-btn-color-secondary-background-hover: #1a1a1a;
-  --embrace-btn-color-secondary-foreground: hsl(0deg, 0%, 100%);
+  --embrace-btn-color-secondary-foreground: hsl(0, 0%, 100%);
 }
 
 :root {
-  --embrace-form-color-background: hsl(0deg, 0%, 100%);
-  --embrace-form-color-background-disabled: hsl(0deg, 0%, 95%);
-  --embrace-form-color-border: hsl(260deg, 4%, 70%);
-  --embrace-form-color-border-disabled: hsl(0deg, 0%, 90%);
-  --embrace-form-color-border-focus: hsl(227deg, 100%, 60%);
+  --embrace-form-color-background: hsl(0, 0%, 100%);
+  --embrace-form-color-background-disabled: hsl(0, 0%, 95%);
+  --embrace-form-color-border: hsl(260, 4%, 70%);
+  --embrace-form-color-border-disabled: hsl(0, 0%, 90%);
+  --embrace-form-color-border-focus: hsl(227, 100%, 60%);
   --embrace-form-color-ring-focus: rgba(51, 95, 255, 0.25);
-  --embrace-form-color-check-foreground: hsl(0deg, 0%, 100%);
-  --embrace-form-color-check-background: hsl(227deg, 100%, 60%);
-  --embrace-form-color-check-focus-ring: hsl(227deg, 100%, 60%);
-  --embrace-form-color-invalid: hsl(0deg, 71%, 51%);
+  --embrace-form-color-check-foreground: hsl(0, 0%, 100%);
+  --embrace-form-color-check-background: hsl(227, 100%, 60%);
+  --embrace-form-color-check-focus-ring: hsl(227, 100%, 60%);
+  --embrace-form-color-invalid: hsl(0, 71%, 51%);
   --embrace-form-color-invalid-focus-ring: rgba(219, 41, 41, 0.25);
-  --embrace-form-color-label: hsl(205deg, 100%, 2%);
-  --embrace-form-color-legend: hsl(205deg, 100%, 2%);
-  --embrace-form-color-placeholder: hsl(208deg, 7%, 40%);
-  --embrace-form-color-range-thumb-background: hsl(227deg, 100%, 60%);
-  --embrace-form-color-range-thumb-focus-ring: hsl(227deg, 100%, 60%);
-  --embrace-form-color-range-track-background: hsl(0deg, 0%, 90%);
-  --embrace-form-color-text: hsl(208deg, 7%, 30%);
-  --embrace-form-color-select-foreground: hsl(205deg, 100%, 2%);
-  --embrace-form-color-valid: hsl(150deg, 100%, 33%);
+  --embrace-form-color-label: hsl(205, 100%, 2%);
+  --embrace-form-color-legend: hsl(205, 100%, 2%);
+  --embrace-form-color-placeholder: hsl(208, 7%, 40%);
+  --embrace-form-color-range-thumb-background: hsl(227, 100%, 60%);
+  --embrace-form-color-range-thumb-focus-ring: hsl(227, 100%, 60%);
+  --embrace-form-color-range-track-background: hsl(0, 0%, 90%);
+  --embrace-form-color-text: hsl(208, 7%, 30%);
+  --embrace-form-color-select-foreground: hsl(205, 100%, 2%);
+  --embrace-form-color-valid: hsl(150, 100%, 33%);
   --embrace-form-color-valid-focus-ring: rgba(0, 168, 84, 0.25);
 }
 
 :root {
-  --embrace-table-color-border: hsl(0deg, 0%, 90%);
-  --embrace-table-color-caption: hsl(208deg, 7%, 30%);
-  --embrace-table-color-heading: hsl(205deg, 100%, 2%);
-  --embrace-table-color-hover: hsla(0deg, 0%, 0%, 0.05);
-  --embrace-table-color-text: hsl(208deg, 7%, 30%);
-  --embrace-table-color-stripe: hsla(0deg, 0%, 0%, 0.025);
+  --embrace-table-color-border: hsl(0, 0%, 90%);
+  --embrace-table-color-caption: hsl(208, 7%, 30%);
+  --embrace-table-color-heading: hsl(205, 100%, 2%);
+  --embrace-table-color-hover: hsla(0, 0%, 0%, 0.05);
+  --embrace-table-color-text: hsl(208, 7%, 30%);
+  --embrace-table-color-stripe: hsla(0, 0%, 0%, 0.025);
 }
 
 :root {
-  --embrace-scrollbar-color-thumb-background: hsla(0deg, 0%, 0%, 0.15);
-  --embrace-scrollbar-color-thumb-background-hover: hsla(0deg, 0%, 0%, 0.25);
-  --embrace-scrollbar-color-track-background: hsla(0deg, 0%, 0%, 0.05);
+  --embrace-scrollbar-color-thumb-background: hsla(0, 0%, 0%, 0.15);
+  --embrace-scrollbar-color-thumb-background-hover: hsla(0, 0%, 0%, 0.25);
+  --embrace-scrollbar-color-track-background: hsla(0, 0%, 0%, 0.05);
 }
 
 :root {
-  --embrace-custom-color-bg-varient-1: hsl(0deg, 0%, 98%);
-  --embrace-custom-color-bg-varient-2: hsl(231deg, 100%, 99%);
-  --embrace-custom-color-bg-varient-3: hsl(248deg, 27%, 17%);
-  --embrace-custom-color-default-white: hsl(0deg, 0%, 100%);
-  --embrace-custom-color-default-black: hsl(0deg, 0%, 0%);
+  --embrace-custom-color-bg-varient-1: hsl(0, 0%, 98%);
+  --embrace-custom-color-bg-varient-2: hsl(231, 100%, 99%);
+  --embrace-custom-color-bg-varient-3: hsl(248, 27%, 17%);
+  --embrace-custom-color-default-white: hsl(0, 0%, 100%);
+  --embrace-custom-color-default-black: hsl(0, 0%, 0%);
 }
 
 :root {
@@ -419,8 +419,8 @@ template {
 }
 
 ::selection {
-  background-color: var(--embrace-selection-color-background, hsl(227deg, 100%, 60%));
-  color: var(--embrace-selection-color-foreground, hsl(0deg, 0%, 100%));
+  background-color: var(--embrace-selection-color-background, hsl(227, 100%, 60%));
+  color: var(--embrace-selection-color-foreground, hsl(0, 0%, 100%));
   text-shadow: none;
 }
 
@@ -440,12 +440,12 @@ html {
 }
 
 body {
-  background: var(--embrace-base-color-background, hsl(0deg, 0%, 100%));
-  color: var(--embrace-base-color-text, hsl(0deg, 0%, 40%));
+  background: var(--embrace-base-color-background, hsl(0, 0%, 100%));
+  color: var(--embrace-base-color-text, hsl(0, 0%, 40%));
 }
 
 a {
-  color: var(--embrace-base-color-link, hsl(227deg, 100%, 60%));
+  color: var(--embrace-base-color-link, hsl(227, 100%, 60%));
   text-decoration: underline;
   transition-duration: var(--embrace-transition-duration);
   transition-property: color;
@@ -466,7 +466,7 @@ button {
 
 hr {
   border: 0;
-  border-top: 1px solid var(--embrace-base-color-border, hsl(0deg, 0%, 90%));
+  border-top: 1px solid var(--embrace-base-color-border, hsl(0, 0%, 90%));
 }
 
 img {
@@ -514,29 +514,29 @@ figure figcaption {
 
 .table {
   border-collapse: collapse;
-  color: var(--embrace-table-color-text, hsl(208deg, 7%, 30%));
+  color: var(--embrace-table-color-text, hsl(208, 7%, 30%));
   width: 100%;
 }
 .table caption {
-  color: var(--embrace-table-color-caption, hsl(208deg, 7%, 30%));
+  color: var(--embrace-table-color-caption, hsl(208, 7%, 30%));
   margin-block-end: 1rem;
 }
 .table th,
 .table td {
-  border-block-end: 1px solid var(--embrace-table-color-border, hsl(0deg, 0%, 90%));
+  border-block-end: 1px solid var(--embrace-table-color-border, hsl(0, 0%, 90%));
   line-height: 1.5;
   padding: 1rem;
 }
 .table th {
-  color: var(--embrace-table-color-heading, hsl(205deg, 100%, 2%));
+  color: var(--embrace-table-color-heading, hsl(205, 100%, 2%));
   text-align: inherit;
   text-align: -webkit-match-parent;
 }
 .table--striped > tbody > tr:nth-child(odd) {
-  background-color: var(--embrace-table-color-stripe, hsla(0deg, 0%, 0%, 0.025));
+  background-color: var(--embrace-table-color-stripe, hsla(0, 0%, 0%, 0.025));
 }
 .table--hover > tbody > tr:hover {
-  background: var(--embrace-table-color-hover, hsla(0deg, 0%, 0%, 0.05));
+  background: var(--embrace-table-color-hover, hsla(0, 0%, 0%, 0.05));
 }
 .table--clear-border th,
 .table--clear-border td {
@@ -566,7 +566,7 @@ figure figcaption {
 }
 
 html {
-  -webkit-tap-highlight-color: hsla(0deg, 0%, 0%, 0);
+  -webkit-tap-highlight-color: hsla(0, 0%, 0%, 0);
 }
 
 body {
@@ -581,7 +581,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: var(--embrace-base-color-heading, hsl(205deg, 100%, 2%));
+  color: var(--embrace-base-color-heading, hsl(205, 100%, 2%));
   font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
   line-height: calc(2px + 2ex + 2px);
@@ -636,7 +636,7 @@ ol li {
 }
 ul li::marker,
 ol li::marker {
-  color: var(--embrace-base-color-marker, hsl(227deg, 100%, 60%));
+  color: var(--embrace-base-color-marker, hsl(227, 100%, 60%));
 }
 
 li > ul,
@@ -645,7 +645,7 @@ li > ol {
 }
 
 dl dt {
-  color: var(--embrace-base-color-heading, hsl(205deg, 100%, 2%));
+  color: var(--embrace-base-color-heading, hsl(205, 100%, 2%));
   font-weight: bold;
 }
 dl dd {
@@ -656,7 +656,7 @@ dl dd + dt {
 }
 
 .quote {
-  border-inline-start: 0.5rem solid var(--embrace-base-color-blockquote-border, hsl(227deg, 100%, 60%));
+  border-inline-start: 0.5rem solid var(--embrace-base-color-blockquote-border, hsl(227, 100%, 60%));
   padding-inline-start: 1.5rem;
 }
 .quote > * {
@@ -675,7 +675,7 @@ dl dd + dt {
 }
 
 blockquote {
-  border-inline-start: 0.5rem solid var(--embrace-base-color-blockquote-border, hsl(227deg, 100%, 60%));
+  border-inline-start: 0.5rem solid var(--embrace-base-color-blockquote-border, hsl(227, 100%, 60%));
   margin-inline-start: 0;
   padding-inline-start: 1.5rem;
 }
@@ -694,9 +694,9 @@ abbr[title] {
 }
 
 mark {
-  background-color: var(--embrace-base-color-mark-background, hsl(50deg, 100%, 80%));
+  background-color: var(--embrace-base-color-mark-background, hsl(50, 100%, 80%));
   border-radius: 0.425rem;
-  color: var(--embrace-base-color-mark-foreground, hsl(205deg, 100%, 2%));
+  color: var(--embrace-base-color-mark-foreground, hsl(205, 100%, 2%));
   padding: 0.1em 0.3em;
 }
 
@@ -705,7 +705,7 @@ kbd,
 samp {
   background-color: var(--embrace-base-color-code-background, #f0f3ff);
   border-radius: 0.425rem;
-  color: var(--embrace-base-color-code-foreground, hsl(205deg, 100%, 2%));
+  color: var(--embrace-base-color-code-foreground, hsl(205, 100%, 2%));
   padding: 0.1em 0.3em;
 }
 
@@ -802,61 +802,61 @@ samp {
 }
 
 .btn--primary {
-  background-color: var(--embrace-btn-color-primary-background, hsl(227deg, 100%, 60%));
-  border-color: var(--embrace-btn-color-primary-background, hsl(227deg, 100%, 60%));
-  color: var(--embrace-btn-color-primary-foreground, hsl(0deg, 0%, 100%));
+  background-color: var(--embrace-btn-color-primary-background, hsl(227, 100%, 60%));
+  border-color: var(--embrace-btn-color-primary-background, hsl(227, 100%, 60%));
+  color: var(--embrace-btn-color-primary-foreground, hsl(0, 0%, 100%));
 }
 .btn--primary:focus-visible {
-  outline: 2px solid var(--embrace-btn-color-primary-background, hsl(227deg, 100%, 60%));
+  outline: 2px solid var(--embrace-btn-color-primary-background, hsl(227, 100%, 60%));
   outline-offset: 2px;
 }
 .btn--primary:hover {
   background-color: var(--embrace-btn-color-primary-background-hover, #0037ff);
   border-color: var(--embrace-btn-color-primary-background-hover, #0037ff);
-  color: var(--embrace-btn-color-primary-foreground, hsl(0deg, 0%, 100%));
+  color: var(--embrace-btn-color-primary-foreground, hsl(0, 0%, 100%));
 }
 
 .btn--secondary {
-  background-color: var(--embrace-btn-color-secondary-background, hsl(0deg, 0%, 20%));
-  border-color: var(--embrace-btn-color-secondary-background, hsl(0deg, 0%, 20%));
-  color: var(--embrace-btn-color-secondary-foreground, hsl(0deg, 0%, 100%));
+  background-color: var(--embrace-btn-color-secondary-background, hsl(0, 0%, 20%));
+  border-color: var(--embrace-btn-color-secondary-background, hsl(0, 0%, 20%));
+  color: var(--embrace-btn-color-secondary-foreground, hsl(0, 0%, 100%));
 }
 .btn--secondary:focus-visible {
-  outline: 2px solid var(--embrace-btn-color-secondary-background, hsl(0deg, 0%, 20%));
+  outline: 2px solid var(--embrace-btn-color-secondary-background, hsl(0, 0%, 20%));
   outline-offset: 2px;
 }
 .btn--secondary:hover {
   background-color: var(--embrace-btn-color-secondary-background-hover, #1a1a1a);
   border-color: var(--embrace-btn-color-secondary-background-hover, #1a1a1a);
-  color: var(--embrace-btn-color-secondary-foreground, hsl(0deg, 0%, 100%));
+  color: var(--embrace-btn-color-secondary-foreground, hsl(0, 0%, 100%));
 }
 
 .btn--outline-primary {
   background-color: transparent;
-  border-color: var(--embrace-btn-color-primary-background, hsl(227deg, 100%, 60%));
-  color: var(--embrace-btn-color-primary-background, hsl(227deg, 100%, 60%));
+  border-color: var(--embrace-btn-color-primary-background, hsl(227, 100%, 60%));
+  color: var(--embrace-btn-color-primary-background, hsl(227, 100%, 60%));
 }
 .btn--outline-primary:focus-visible {
-  outline: 2px solid var(--embrace-btn-color-primary-background, hsl(227deg, 100%, 60%));
+  outline: 2px solid var(--embrace-btn-color-primary-background, hsl(227, 100%, 60%));
   outline-offset: 2px;
 }
 .btn--outline-primary:hover {
-  background-color: var(--embrace-btn-color-primary-background, hsl(227deg, 100%, 60%));
-  color: var(--embrace-btn-color-primary-foreground, hsl(0deg, 0%, 100%));
+  background-color: var(--embrace-btn-color-primary-background, hsl(227, 100%, 60%));
+  color: var(--embrace-btn-color-primary-foreground, hsl(0, 0%, 100%));
 }
 
 .btn--outline-secondary {
   background-color: transparent;
-  border-color: var(--embrace-btn-color-secondary-background, hsl(0deg, 0%, 20%));
-  color: var(--embrace-btn-color-secondary-background, hsl(0deg, 0%, 20%));
+  border-color: var(--embrace-btn-color-secondary-background, hsl(0, 0%, 20%));
+  color: var(--embrace-btn-color-secondary-background, hsl(0, 0%, 20%));
 }
 .btn--outline-secondary:focus-visible {
-  outline: 2px solid var(--embrace-btn-color-secondary-background, hsl(0deg, 0%, 20%));
+  outline: 2px solid var(--embrace-btn-color-secondary-background, hsl(0, 0%, 20%));
   outline-offset: 2px;
 }
 .btn--outline-secondary:hover {
-  background-color: var(--embrace-btn-color-secondary-background, hsl(0deg, 0%, 20%));
-  color: var(--embrace-btn-color-secondary-foreground, hsl(0deg, 0%, 100%));
+  background-color: var(--embrace-btn-color-secondary-background, hsl(0, 0%, 20%));
+  color: var(--embrace-btn-color-secondary-foreground, hsl(0, 0%, 100%));
 }
 
 .form-file::file-selector-button {
@@ -915,23 +915,23 @@ samp {
 }
 .form-file:focus-within::file-selector-button {
   background-color: transparent;
-  box-shadow: 0 0 0 2px var(--embrace-btn-color-primary-background, hsl(227deg, 100%, 60%)) inset;
-  color: var(--embrace-btn-color-primary-background, hsl(227deg, 100%, 60%));
+  box-shadow: 0 0 0 2px var(--embrace-btn-color-primary-background, hsl(227, 100%, 60%)) inset;
+  color: var(--embrace-btn-color-primary-background, hsl(227, 100%, 60%));
 }
 .form-file::file-selector-button {
-  background-color: var(--embrace-btn-color-primary-background, hsl(227deg, 100%, 60%));
-  border-color: var(--embrace-btn-color-primary-background, hsl(227deg, 100%, 60%));
-  color: var(--embrace-btn-color-primary-foreground, hsl(0deg, 0%, 100%));
+  background-color: var(--embrace-btn-color-primary-background, hsl(227, 100%, 60%));
+  border-color: var(--embrace-btn-color-primary-background, hsl(227, 100%, 60%));
+  color: var(--embrace-btn-color-primary-foreground, hsl(0, 0%, 100%));
   margin-inline-end: 1rem;
 }
 .form-file::file-selector-button:hover {
   background-color: var(--embrace-btn-color-primary-background-hover, #0037ff);
   border-color: var(--embrace-btn-color-primary-background-hover, #0037ff);
-  color: var(--embrace-btn-color-primary-foreground, hsl(0deg, 0%, 100%));
+  color: var(--embrace-btn-color-primary-foreground, hsl(0, 0%, 100%));
 }
 
 .form-label {
-  color: var(--embrace-form-color-label, hsl(205deg, 100%, 2%));
+  color: var(--embrace-form-color-label, hsl(205, 100%, 2%));
   line-height: 1.5;
 }
 .form-label--sm {
@@ -944,11 +944,11 @@ samp {
 .form-control {
   --webkit-date-line-height: 1.375;
   appearance: none;
-  background-color: var(--embrace-form-color-background, hsl(0deg, 0%, 100%));
-  border: 1px solid var(--embrace-form-color-border, hsl(260deg, 4%, 70%));
+  background-color: var(--embrace-form-color-background, hsl(0, 0%, 100%));
+  border: 1px solid var(--embrace-form-color-border, hsl(260, 4%, 70%));
   border-radius: 0.425rem;
   box-sizing: border-box;
-  color: var(--embrace-form-color-text, hsl(208deg, 7%, 30%));
+  color: var(--embrace-form-color-text, hsl(208, 7%, 30%));
   display: block;
   font-size: 1rem;
   line-height: 1.5;
@@ -959,13 +959,13 @@ samp {
   width: 100%;
 }
 .form-control::placeholder {
-  color: var(--embrace-form-color-placeholder, hsl(208deg, 7%, 40%));
+  color: var(--embrace-form-color-placeholder, hsl(208, 7%, 40%));
 }
 .form-control::-webkit-datetime-edit {
   line-height: var(--webkit-date-line-height);
 }
 .form-control:focus {
-  border-color: var(--embrace-form-color-border-focus, hsl(227deg, 100%, 60%));
+  border-color: var(--embrace-form-color-border-focus, hsl(227, 100%, 60%));
   box-shadow: 0 0 0 0.25rem var(--embrace-form-color-ring-focus, rgba(51, 95, 255, 0.25));
   outline: 2px solid transparent;
 }
@@ -985,8 +985,8 @@ samp {
   border-radius: 0.425rem;
 }
 .form-control[disabled], .form-control[disabled=true] {
-  background-color: var(--embrace-form-color-background-disabled, hsl(0deg, 0%, 95%));
-  border-color: var(--embrace-form-color-border-disabled, hsl(0deg, 0%, 90%));
+  background-color: var(--embrace-form-color-background-disabled, hsl(0, 0%, 95%));
+  border-color: var(--embrace-form-color-border-disabled, hsl(0, 0%, 90%));
   cursor: not-allowed;
 }
 textarea.form-control {
@@ -1005,20 +1005,20 @@ html[dir=rtl] .form-control--valid, html[dir=rtl] .form-control--invalid {
   background-position: center left 0.5em;
 }
 .form-control--valid {
-  background-image: url('data:image/svg+xml,%3csvg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"%3e%3cpath d="M12,2c5.519,0 10,4.481 10,10c0,5.519 -4.481,10 -10,10c-5.519,0 -10,-4.481 -10,-10c0,-5.519 4.481,-10 10,-10Zm0,1.667c4.599,-0 8.333,3.734 8.333,8.333c0,4.599 -3.734,8.333 -8.333,8.333c-4.599,0 -8.333,-3.734 -8.333,-8.333c-0,-4.599 3.734,-8.333 8.333,-8.333Zm-1.476,10.182l-2.984,-2.984c-0.065,-0.065 -0.17,-0.065 -0.235,0l-0.943,0.943c-0.065,0.065 -0.065,0.171 -0,0.236l4.043,4.042c0.033,0.033 0.076,0.05 0.119,0.049c0.044,0.001 0.087,-0.016 0.12,-0.049l6.994,-6.994c0.065,-0.065 0.065,-0.17 0,-0.235l-0.943,-0.943c-0.065,-0.065 -0.17,-0.065 -0.235,-0l-5.936,5.935Z" style="fill:hsl%28150deg, 100%, 33%%29;"/%3e%3c/svg%3e');
-  border-color: var(--embrace-alert-color-success, hsl(150deg, 100%, 33%));
+  background-image: url('data:image/svg+xml,%3csvg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"%3e%3cpath d="M12,2c5.519,0 10,4.481 10,10c0,5.519 -4.481,10 -10,10c-5.519,0 -10,-4.481 -10,-10c0,-5.519 4.481,-10 10,-10Zm0,1.667c4.599,-0 8.333,3.734 8.333,8.333c0,4.599 -3.734,8.333 -8.333,8.333c-4.599,0 -8.333,-3.734 -8.333,-8.333c-0,-4.599 3.734,-8.333 8.333,-8.333Zm-1.476,10.182l-2.984,-2.984c-0.065,-0.065 -0.17,-0.065 -0.235,0l-0.943,0.943c-0.065,0.065 -0.065,0.171 -0,0.236l4.043,4.042c0.033,0.033 0.076,0.05 0.119,0.049c0.044,0.001 0.087,-0.016 0.12,-0.049l6.994,-6.994c0.065,-0.065 0.065,-0.17 0,-0.235l-0.943,-0.943c-0.065,-0.065 -0.17,-0.065 -0.235,-0l-5.936,5.935Z" style="fill:hsl%28150, 100%, 33%%29;"/%3e%3c/svg%3e');
+  border-color: var(--embrace-alert-color-success, hsl(150, 100%, 33%));
 }
 .form-control--valid:focus {
-  border-color: var(--embrace-form-color-valid, hsl(150deg, 100%, 33%));
+  border-color: var(--embrace-form-color-valid, hsl(150, 100%, 33%));
   box-shadow: 0 0 0 0.25rem var(--embrace-form-color-valid-focus-ring, rgba(0, 168, 84, 0.25));
   outline: 2px solid transparent;
 }
 .form-control--invalid {
-  background-image: url('data:image/svg+xml,%3csvg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"%3e%3cpath d="M12,2c5.519,0 10,4.481 10,10c0,5.519 -4.481,10 -10,10c-5.519,0 -10,-4.481 -10,-10c0,-5.519 4.481,-10 10,-10Zm0,1.667c4.599,-0 8.333,3.734 8.333,8.333c0,4.599 -3.734,8.333 -8.333,8.333c-4.599,0 -8.333,-3.734 -8.333,-8.333c-0,-4.599 3.734,-8.333 8.333,-8.333Zm0.813,11.649c-0,-0.081 -0.065,-0.146 -0.146,-0.146l-1.334,0c-0.081,0 -0.146,0.065 -0.146,0.146l0,1.169c0,0.08 0.065,0.146 0.146,0.146l1.334,-0c0.081,-0 0.146,-0.066 0.146,-0.146l-0,-1.169Zm-0,-7.784c-0,-0.09 -0.073,-0.163 -0.163,-0.163l-1.3,0c-0.09,0 -0.163,0.073 -0.163,0.163l0,6.351c0,0.09 0.073,0.163 0.163,0.163l1.3,-0c0.09,-0 0.163,-0.073 0.163,-0.163l-0,-6.351Z" style="fill:hsl%280deg, 71%, 51%%29;"/%3e%3c/svg%3e');
-  border-color: var(--embrace-alert-color-danger, hsl(0deg, 71%, 51%));
+  background-image: url('data:image/svg+xml,%3csvg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"%3e%3cpath d="M12,2c5.519,0 10,4.481 10,10c0,5.519 -4.481,10 -10,10c-5.519,0 -10,-4.481 -10,-10c0,-5.519 4.481,-10 10,-10Zm0,1.667c4.599,-0 8.333,3.734 8.333,8.333c0,4.599 -3.734,8.333 -8.333,8.333c-4.599,0 -8.333,-3.734 -8.333,-8.333c-0,-4.599 3.734,-8.333 8.333,-8.333Zm0.813,11.649c-0,-0.081 -0.065,-0.146 -0.146,-0.146l-1.334,0c-0.081,0 -0.146,0.065 -0.146,0.146l0,1.169c0,0.08 0.065,0.146 0.146,0.146l1.334,-0c0.081,-0 0.146,-0.066 0.146,-0.146l-0,-1.169Zm-0,-7.784c-0,-0.09 -0.073,-0.163 -0.163,-0.163l-1.3,0c-0.09,0 -0.163,0.073 -0.163,0.163l0,6.351c0,0.09 0.073,0.163 0.163,0.163l1.3,-0c0.09,-0 0.163,-0.073 0.163,-0.163l-0,-6.351Z" style="fill:hsl%280, 71%, 51%%29;"/%3e%3c/svg%3e');
+  border-color: var(--embrace-alert-color-danger, hsl(0, 71%, 51%));
 }
 .form-control--invalid:focus {
-  border-color: var(--embrace-form-color-invalid, hsl(0deg, 71%, 51%));
+  border-color: var(--embrace-form-color-invalid, hsl(0, 71%, 51%));
   box-shadow: 0 0 0 0.25rem var(--embrace-form-color-invalid-focus-ring, rgba(219, 41, 41, 0.25));
   outline: 2px solid transparent;
 }
@@ -1042,7 +1042,7 @@ html[dir=rtl] .form-control--valid, html[dir=rtl] .form-control--invalid {
 }
 
 select.form-control:not([multiple]):not([size]) {
-  background-image: url('data:image/svg+xml,%3csvg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"%3e%3cpath d="M12,12.507l-3.816,-3.815c-0.171,-0.172 -0.45,-0.172 -0.622,-0l-0.933,0.933c-0.172,0.172 -0.172,0.451 0,0.623l5.06,5.06c0.172,0.172 0.45,0.172 0.622,0l5.06,-5.06c0.172,-0.172 0.172,-0.451 -0,-0.623l-0.933,-0.933c-0.172,-0.172 -0.451,-0.172 -0.622,-0l-3.816,3.815Z" style="fill:hsl%28205deg, 100%, 2%%29;"/%3e%3c/svg%3e');
+  background-image: url('data:image/svg+xml,%3csvg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"%3e%3cpath d="M12,12.507l-3.816,-3.815c-0.171,-0.172 -0.45,-0.172 -0.622,-0l-0.933,0.933c-0.172,0.172 -0.172,0.451 0,0.623l5.06,5.06c0.172,0.172 0.45,0.172 0.622,0l5.06,-5.06c0.172,-0.172 0.172,-0.451 -0,-0.623l-0.933,-0.933c-0.172,-0.172 -0.451,-0.172 -0.622,-0l-3.816,3.815Z" style="fill:hsl%28205, 100%, 2%%29;"/%3e%3c/svg%3e');
   background-position: center right 0.5em;
   background-repeat: no-repeat;
   background-size: 1.25em auto;
@@ -1076,11 +1076,11 @@ html[dir=rtl] select.form-control:not([multiple]):not([size]) {
 
 .form-check__control {
   appearance: none;
-  background-color: var(--embrace-form-color-background, hsl(0deg, 0%, 100%));
+  background-color: var(--embrace-form-color-background, hsl(0, 0%, 100%));
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  border: 1px solid var(--embrace-form-color-border, hsl(260deg, 4%, 70%));
+  border: 1px solid var(--embrace-form-color-border, hsl(260, 4%, 70%));
   flex-shrink: 0;
   font-size: 1.125rem;
   height: 1em;
@@ -1098,27 +1098,27 @@ html[dir=rtl] select.form-control:not([multiple]):not([size]) {
   border-radius: 0.425rem;
 }
 .form-check__control:focus-visible {
-  outline: 2px solid var(--embrace-form-color-check-focus-ring, hsl(227deg, 100%, 60%));
+  outline: 2px solid var(--embrace-form-color-check-focus-ring, hsl(227, 100%, 60%));
   outline-offset: 2px;
 }
 .form-check__control:checked {
-  background-color: var(--embrace-form-color-check-background, hsl(227deg, 100%, 60%));
-  border-color: var(--embrace-form-color-check-background, hsl(227deg, 100%, 60%));
+  background-color: var(--embrace-form-color-check-background, hsl(227, 100%, 60%));
+  border-color: var(--embrace-form-color-check-background, hsl(227, 100%, 60%));
 }
 .form-check__control:checked[type=radio] {
-  background-image: url('data:image/svg+xml,%3csvg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"%3e%3ccircle cx="12" cy="12" r="6" style="fill:hsl%280deg, 0%, 100%%29;"/%3e%3c/svg%3e');
+  background-image: url('data:image/svg+xml,%3csvg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"%3e%3ccircle cx="12" cy="12" r="6" style="fill:hsl%280, 0%, 100%%29;"/%3e%3c/svg%3e');
 }
 .form-check__control:checked[type=checkbox] {
-  background-image: url('data:image/svg+xml,%3csvg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"%3e%3cpath d="M9.525,13.777l-2.411,-2.412c-0.234,-0.233 -0.613,-0.233 -0.846,0l-1.27,1.27c-0.233,0.233 -0.233,0.612 0,0.846l4.104,4.103c0.116,0.117 0.269,0.175 0.422,0.175l0.003,0c0.152,0 0.305,-0.058 0.421,-0.175l9.054,-9.053c0.233,-0.234 0.233,-0.613 -0,-0.846l-1.27,-1.269c-0.233,-0.234 -0.612,-0.234 -0.846,-0l-7.361,7.361Z" style="fill:hsl%280deg, 0%, 100%%29;"/%3e%3c/svg%3e');
+  background-image: url('data:image/svg+xml,%3csvg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"%3e%3cpath d="M9.525,13.777l-2.411,-2.412c-0.234,-0.233 -0.613,-0.233 -0.846,0l-1.27,1.27c-0.233,0.233 -0.233,0.612 0,0.846l4.104,4.103c0.116,0.117 0.269,0.175 0.422,0.175l0.003,0c0.152,0 0.305,-0.058 0.421,-0.175l9.054,-9.053c0.233,-0.234 0.233,-0.613 -0,-0.846l-1.27,-1.269c-0.233,-0.234 -0.612,-0.234 -0.846,-0l-7.361,7.361Z" style="fill:hsl%280, 0%, 100%%29;"/%3e%3c/svg%3e');
 }
 .form-check__control:indeterminate[type=checkbox] {
-  background-image: url('data:image/svg+xml,%3csvg viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg"%3e%3cpath d="M19.5,11.1c-0,-0.331 -0.269,-0.6 -0.6,-0.6l-13.8,0c-0.331,0 -0.6,0.269 -0.6,0.6l0,1.8c0,0.331 0.269,0.6 0.6,0.6l13.8,0c0.331,0 0.6,-0.269 0.6,-0.6l-0,-1.8Z" style="fill:hsl%280deg, 0%, 100%%29;"/%3e%3c/svg%3e');
-  background-color: var(--embrace-form-color-check-background, hsl(227deg, 100%, 60%));
-  border-color: var(--embrace-form-color-check-background, hsl(227deg, 100%, 60%));
+  background-image: url('data:image/svg+xml,%3csvg viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg"%3e%3cpath d="M19.5,11.1c-0,-0.331 -0.269,-0.6 -0.6,-0.6l-13.8,0c-0.331,0 -0.6,0.269 -0.6,0.6l0,1.8c0,0.331 0.269,0.6 0.6,0.6l13.8,0c0.331,0 0.6,-0.269 0.6,-0.6l-0,-1.8Z" style="fill:hsl%280, 0%, 100%%29;"/%3e%3c/svg%3e');
+  background-color: var(--embrace-form-color-check-background, hsl(227, 100%, 60%));
+  border-color: var(--embrace-form-color-check-background, hsl(227, 100%, 60%));
 }
 .form-check__control:disabled {
-  background-color: var(--embrace-form-color-background-disabled, hsl(0deg, 0%, 95%));
-  border-color: var(--embrace-form-color-border-disabled, hsl(0deg, 0%, 90%));
+  background-color: var(--embrace-form-color-background-disabled, hsl(0, 0%, 95%));
+  border-color: var(--embrace-form-color-border-disabled, hsl(0, 0%, 90%));
   cursor: not-allowed;
 }
 .form-check__control:disabled + .form-check__label {
@@ -1148,13 +1148,13 @@ html[dir=rtl] select.form-control:not([multiple]):not([size]) {
 }
 
 .form-switch__control {
-  background-image: url('data:image/svg+xml,%3csvg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"%3e%3ccircle cx="12" cy="12" r="8.5" style="fill:hsl%28260deg, 4%, 70%%29;"/%3e%3c/svg%3e');
+  background-image: url('data:image/svg+xml,%3csvg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"%3e%3ccircle cx="12" cy="12" r="8.5" style="fill:hsl%28260, 4%, 70%%29;"/%3e%3c/svg%3e');
   appearance: none;
-  background-color: var(--embrace-form-color-background, hsl(0deg, 0%, 100%));
+  background-color: var(--embrace-form-color-background, hsl(0, 0%, 100%));
   background-position: left center;
   background-repeat: no-repeat;
   background-size: contain;
-  border: 1px solid var(--embrace-form-color-border, hsl(260deg, 4%, 70%));
+  border: 1px solid var(--embrace-form-color-border, hsl(260, 4%, 70%));
   border-radius: 2em;
   flex-shrink: 0;
   font-size: 1.125rem;
@@ -1167,18 +1167,18 @@ html[dir=rtl] select.form-control:not([multiple]):not([size]) {
   width: 2em;
 }
 .form-switch__control:focus-visible {
-  outline: 2px solid var(--embrace-form-color-check-focus-ring, hsl(227deg, 100%, 60%));
+  outline: 2px solid var(--embrace-form-color-check-focus-ring, hsl(227, 100%, 60%));
   outline-offset: 2px;
 }
 .form-switch__control:checked {
-  background-image: url('data:image/svg+xml,%3csvg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"%3e%3ccircle cx="12" cy="12" r="8.5" style="fill:hsl%280deg, 0%, 100%%29;"/%3e%3c/svg%3e');
-  background-color: var(--embrace-form-color-check-background, hsl(227deg, 100%, 60%));
+  background-image: url('data:image/svg+xml,%3csvg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"%3e%3ccircle cx="12" cy="12" r="8.5" style="fill:hsl%280, 0%, 100%%29;"/%3e%3c/svg%3e');
+  background-color: var(--embrace-form-color-check-background, hsl(227, 100%, 60%));
   background-position: right center;
-  border-color: var(--embrace-form-color-check-background, hsl(227deg, 100%, 60%));
+  border-color: var(--embrace-form-color-check-background, hsl(227, 100%, 60%));
 }
 .form-switch__control:disabled {
-  background-color: var(--embrace-form-color-background-disabled, hsl(0deg, 0%, 95%));
-  border-color: var(--embrace-form-color-border-disabled, hsl(0deg, 0%, 90%));
+  background-color: var(--embrace-form-color-background-disabled, hsl(0, 0%, 95%));
+  border-color: var(--embrace-form-color-border-disabled, hsl(0, 0%, 90%));
   cursor: not-allowed;
 }
 .form-switch__control:disabled + .form-switch__label {
@@ -1197,7 +1197,7 @@ html[dir=rtl] select.form-control:not([multiple]):not([size]) {
 }
 
 .form-description {
-  color: var(--embrace-form-color-text, hsl(208deg, 7%, 30%));
+  color: var(--embrace-form-color-text, hsl(208, 7%, 30%));
   display: block;
   line-height: 1.5;
 }
@@ -1219,7 +1219,7 @@ fieldset + fieldset {
 }
 
 legend {
-  color: var(--embrace-form-color-legend, hsl(205deg, 100%, 2%));
+  color: var(--embrace-form-color-legend, hsl(205, 100%, 2%));
   font-size: clamp(1rem, 5vw, 1.25rem);
   font-weight: 700;
 }
@@ -1263,7 +1263,7 @@ legend {
 }
 @media (min-width: 48em) {
   .form-group--row .form-description,
-.form-group--row .field-feedback {
+  .form-group--row .field-feedback {
     grid-column-start: 2;
   }
 }
@@ -1327,10 +1327,10 @@ legend {
   line-height: 1.5;
 }
 .field-feedback--valid {
-  color: var(--embrace-alert-color-success, hsl(150deg, 100%, 33%));
+  color: var(--embrace-alert-color-success, hsl(150, 100%, 33%));
 }
 .field-feedback--invalid {
-  color: var(--embrace-alert-color-danger, hsl(0deg, 71%, 51%));
+  color: var(--embrace-alert-color-danger, hsl(0, 71%, 51%));
 }
 
 .form-range {
@@ -1341,33 +1341,33 @@ legend {
   outline: none;
 }
 .form-range:focus-visible::-webkit-slider-thumb {
-  outline: 2px solid var(--embrace-form-color-range-thumb-focus-ring, hsl(227deg, 100%, 60%));
+  outline: 2px solid var(--embrace-form-color-range-thumb-focus-ring, hsl(227, 100%, 60%));
   outline-offset: 2px;
 }
 .form-range:focus-visible::-moz-range-thumb {
-  outline: 2px solid var(--embrace-form-color-range-thumb-focus-ring, hsl(227deg, 100%, 60%));
+  outline: 2px solid var(--embrace-form-color-range-thumb-focus-ring, hsl(227, 100%, 60%));
   outline-offset: 2px;
 }
 .form-range::-webkit-slider-runnable-track {
-  background-color: var(--embrace-form-color-range-track-background, hsl(0deg, 0%, 90%));
+  background-color: var(--embrace-form-color-range-track-background, hsl(0, 0%, 90%));
   border-radius: 0.15rem;
   height: 0.25rem;
 }
 .form-range::-moz-range-track {
-  background-color: var(--embrace-form-color-range-track-background, hsl(0deg, 0%, 90%));
+  background-color: var(--embrace-form-color-range-track-background, hsl(0, 0%, 90%));
   border-radius: 0.15rem;
   height: 0.25rem;
 }
 .form-range::-webkit-slider-thumb {
   appearance: none;
-  background-color: var(--embrace-form-color-range-thumb-background, hsl(227deg, 100%, 60%));
+  background-color: var(--embrace-form-color-range-thumb-background, hsl(227, 100%, 60%));
   border-radius: 0.5rem;
   height: 1rem;
   margin-block-start: calc(0.25rem / 2 - 1rem / 2);
   width: 1rem;
 }
 .form-range::-moz-range-thumb {
-  background-color: var(--embrace-form-color-range-thumb-background, hsl(227deg, 100%, 60%));
+  background-color: var(--embrace-form-color-range-thumb-background, hsl(227, 100%, 60%));
   border: 0; /*Removes extra border that FF applies*/
   border-radius: 0.5rem;
   height: 1rem;
@@ -1378,10 +1378,10 @@ legend {
 }
 
 .accordion-card {
-  background-color: var(--embrace-base-color-background, hsl(0deg, 0%, 100%));
+  background-color: var(--embrace-base-color-background, hsl(0, 0%, 100%));
 }
 .accordion-card--box {
-  border: 1px solid var(--embrace-base-color-border, hsl(0deg, 0%, 90%));
+  border: 1px solid var(--embrace-base-color-border, hsl(0, 0%, 90%));
   border-radius: 0.425rem;
 }
 .accordion-card--box .accordion-card__title {
@@ -1419,14 +1419,14 @@ legend {
   width: 100%;
 }
 .accordion-card__toggle:focus-visible svg {
-  outline: 2px solid var(--embrace-base-color-primary, hsl(227deg, 100%, 60%));
+  outline: 2px solid var(--embrace-base-color-primary, hsl(227, 100%, 60%));
   outline-offset: 2px;
 }
 .accordion-card__toggle svg {
   --dimension: 1.5rem;
-  background-color: var(--embrace-base-color-primary, hsl(227deg, 100%, 60%));
+  background-color: var(--embrace-base-color-primary, hsl(227, 100%, 60%));
   border-radius: 999px;
-  color: hsl(0deg, 0%, 100%);
+  color: hsl(0, 0%, 100%);
   flex-shrink: 0;
   height: var(--dimension);
   width: var(--dimension);
@@ -1470,11 +1470,11 @@ legend {
   position: fixed;
   inset: 0;
   padding: 1.5rem;
-  background-color: var(--embrace-base-color-background, hsl(0deg, 0%, 100%));
+  background-color: var(--embrace-base-color-background, hsl(0, 0%, 100%));
   max-width: 20rem;
   transform: translateX(-100%);
   border-bottom-right-radius: 3rem;
-  box-shadow: 0 0.25rem 1rem hsla(0deg, 0%, 0%, 0.1);
+  box-shadow: 0 0.25rem 1rem hsla(0, 0%, 0%, 0.1);
   transition-duration: var(--embrace-transition-duration);
   transition-property: all;
   transition-timing-function: var(--embrace-transition-timing-function);
@@ -1496,7 +1496,7 @@ legend {
 .site-navigation__backdrop {
   position: fixed;
   inset: 0;
-  background-color: hsla(0deg, 0%, 0%, 0.2);
+  background-color: hsla(0, 0%, 0%, 0.2);
   z-index: 0;
 }
 .site-navigation ul {
@@ -1517,18 +1517,18 @@ legend {
   margin-block: 0;
 }
 .site-navigation__item a {
-  color: var(--embrace-base-color-heading, hsl(205deg, 100%, 2%));
+  color: var(--embrace-base-color-heading, hsl(205, 100%, 2%));
   font-weight: 500;
   display: inline-flex;
   text-decoration: none;
   padding: 0.25rem 1rem;
 }
 .site-navigation__item a:hover {
-  color: var(--embrace-base-color-primary, hsl(227deg, 100%, 60%));
+  color: var(--embrace-base-color-primary, hsl(227, 100%, 60%));
   background-color: var(--embrace-base-color-code-background, #f0f3ff);
 }
 .site-navigation__item.active a {
-  color: var(--embrace-base-color-primary, hsl(227deg, 100%, 60%));
+  color: var(--embrace-base-color-primary, hsl(227, 100%, 60%));
   background-color: var(--embrace-base-color-code-background, #f0f3ff);
 }
 .site-navigation__cta {
@@ -1552,7 +1552,7 @@ legend {
   display: block;
   width: 2rem;
   height: 0.125rem;
-  background-color: var(--embrace-base-color-primary, hsl(227deg, 100%, 60%));
+  background-color: var(--embrace-base-color-primary, hsl(227, 100%, 60%));
 }
 @media (min-width: 64em) {
   .site-navigation__mobile-menu {
@@ -1609,7 +1609,7 @@ legend {
 
 .partners {
   padding-block: 7rem;
-  background-color: var(--embrace-custom-color-bg-varient-1, hsl(0deg, 0%, 98%));
+  background-color: var(--embrace-custom-color-bg-varient-1, hsl(0, 0%, 98%));
 }
 .partners__header {
   display: flex;
@@ -1716,12 +1716,12 @@ legend {
   justify-content: center;
   width: 6.375rem;
   height: 6.375rem;
-  background-color: var(--embrace-base-color-primary, hsl(227deg, 100%, 60%));
+  background-color: var(--embrace-base-color-primary, hsl(227, 100%, 60%));
   border-radius: 1.5rem;
   margin-bottom: 1.5rem;
 }
 .how-works__grid svg {
-  color: var(--embrace-custom-color-default-white, hsl(0deg, 0%, 100%));
+  color: var(--embrace-custom-color-default-white, hsl(0, 0%, 100%));
   font-size: clamp(2.0751953125rem, 2vw + 1rem, 2.44140625rem);
 }
 .how-works__grid h6 {
@@ -1794,7 +1794,7 @@ legend {
 
 .section-journey {
   padding-block: 3rem;
-  background-color: var(--embrace-base-color-primary, hsl(227deg, 100%, 60%));
+  background-color: var(--embrace-base-color-primary, hsl(227, 100%, 60%));
   background-image: url(../img/journey-mask-group.svg);
   background-position: left center;
   background-repeat: no-repeat;
@@ -1806,20 +1806,20 @@ legend {
   gap: 10rem;
 }
 .section-journey h2 {
-  color: var(--embrace-custom-color-default-white, hsl(0deg, 0%, 100%));
+  color: var(--embrace-custom-color-default-white, hsl(0, 0%, 100%));
   font-size: clamp(2.125rem, 2vw + 1rem, 2.5rem);
   font-weight: 500;
   margin: 0;
   flex: 1 1 100%;
 }
 .section-journey p {
-  color: var(--embrace-custom-color-default-white, hsl(0deg, 0%, 100%));
+  color: var(--embrace-custom-color-default-white, hsl(0, 0%, 100%));
   font-size: 1.125rem;
   margin: 0;
   margin-block-end: 3rem;
 }
 .section-journey a {
-  color: var(--embrace-custom-color-default-white, hsl(0deg, 0%, 100%));
+  color: var(--embrace-custom-color-default-white, hsl(0, 0%, 100%));
 }
 
 .section-teams {
@@ -1865,8 +1865,8 @@ legend {
 
 .section-banner {
   padding-block: 7rem;
-  --embrace-bg-color: hsl(248deg, 28%, 17%);
-  --embrace-highlight-color: hsl(68deg, 100%, 57%);
+  --embrace-bg-color: hsl(248, 28%, 17%);
+  --embrace-highlight-color: hsl(68, 100%, 57%);
 }
 .section-banner__wrapper {
   display: flex;
@@ -1892,7 +1892,7 @@ legend {
   padding-block: 1.5rem;
 }
 .section-banner__content h2 {
-  color: var(--embrace-custom-color-default-white, hsl(0deg, 0%, 100%));
+  color: var(--embrace-custom-color-default-white, hsl(0, 0%, 100%));
   font-size: clamp(2.1rem, 2vw + 1rem, 3rem);
   font-weight: 500;
   margin: 0;
@@ -1912,7 +1912,7 @@ legend {
   background-color: var(--embrace-highlight-color);
 }
 .section-banner__cirlce svg {
-  color: var(--embrace-base-color-primary, hsl(227deg, 100%, 60%));
+  color: var(--embrace-base-color-primary, hsl(227, 100%, 60%));
   font-size: clamp(5rem, 2vw + 1rem, 10rem);
 }
 
@@ -2003,7 +2003,7 @@ legend {
   }
 }
 .site-footer__primary {
-  background-color: var(--embrace-custom-color-bg-varient-1, hsl(0deg, 0%, 98%));
+  background-color: var(--embrace-custom-color-bg-varient-1, hsl(0, 0%, 98%));
   padding-block: 3rem;
 }
 @media (min-width: 64em) {
@@ -2054,24 +2054,24 @@ legend {
   }
 }
 .site-footer__primary .site-footer__links a {
-  --embrace-text-color: var(--embrace-custom-color-default-black, hsl(0deg, 0%, 0%));
+  --embrace-text-color: var(--embrace-custom-color-default-black, hsl(0, 0%, 0%));
   --embrace-text-decoration: none;
   font-weight: 500;
   color: var(--embrace-text-color);
   text-decoration: var(--embrace-text-decoration);
 }
 .site-footer__primary .site-footer__links a:hover {
-  --embrace-text-color: var(--embrace-base-color-primary, hsl(227deg, 100%, 60%));
+  --embrace-text-color: var(--embrace-base-color-primary, hsl(227, 100%, 60%));
   --embrace-text-decoration: underline;
 }
 .site-footer__primary address {
-  color: var(--embrace-custom-color-default-black, hsl(0deg, 0%, 0%));
+  color: var(--embrace-custom-color-default-black, hsl(0, 0%, 0%));
   font-style: normal;
 }
 .site-footer__secondary {
-  color: var(--embrace-custom-color-default-white, hsl(0deg, 0%, 100%));
+  color: var(--embrace-custom-color-default-white, hsl(0, 0%, 100%));
   padding-block: 3rem;
-  background-color: var(--embrace-base-color-secondary, hsl(0deg, 0%, 20%));
+  background-color: var(--embrace-base-color-secondary, hsl(0, 0%, 20%));
 }
 .site-footer__secondary .container {
   text-align: center;
@@ -2114,7 +2114,7 @@ legend {
 }
 .site-footer__secondary ul a {
   --embrace-text-decoration: none;
-  color: var(--embrace-custom-color-default-white, hsl(0deg, 0%, 100%));
+  color: var(--embrace-custom-color-default-white, hsl(0, 0%, 100%));
   text-decoration: var(--embrace-text-decoration);
 }
 .site-footer__secondary ul a:hover {
