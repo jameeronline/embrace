@@ -1,10 +1,10 @@
 {
-  "name": " ",
+  "name": "embrace",
   "version": "0.0.1",
   "description": "",
-  "keywords": "",
+  "keywords": "scss, sass, responsive, html, css, mobilefirst",
   "license": "",
-  "author": "",
+  "author": "Jamal Mohamed Ameer",
   "scripts": {
     "sass:prod": "sass --load-path=node_modules --no-source-map --style=compressed scss:css",
     "sass:dev": "sass --load-path=node_modules scss:css",
