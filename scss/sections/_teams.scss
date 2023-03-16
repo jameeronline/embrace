@@ -3,13 +3,18 @@
 
 .section-teams{
   $this: &;
-  padding-block: spacer(xxl);
+  padding-block: spacer-clamp(l, xxl);
 
   .container{
     display: flex;
+    flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
-    gap: spacer(xxl);
+    gap: spacer-clamp(l, xxl);
+
+    @include breakpoint(md){
+      flex-direction: row;
+    }
 
     > *{
       flex: 1 1 50%;
@@ -30,7 +35,7 @@
 
     @at-root #{$this}.lead{
       line-height: $line-height-sm;
-      font-size: responsive-font-size(2rem);
+      font-size: responsive-font-size(2rem, 50);
       margin-block-end: spacer(s);
     }
   }

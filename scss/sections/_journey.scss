@@ -12,8 +12,13 @@
   .container{
     display: flex;
     align-items: flex-start;
-    justify-content: space-between;
-    gap: spacer(xxxl);
+    flex-direction: column;
+    gap: spacer-clamp(l, xxxl);
+
+    @include breakpoint(md){
+      flex-direction: row;
+      justify-content: space-between;
+    }
   }
 
   h2{

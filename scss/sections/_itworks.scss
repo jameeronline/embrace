@@ -3,11 +3,16 @@
 
 .how-works{
   $this: &;
-  padding-block: spacer(xxl);
+  padding-block: spacer-clamp(l, xxl);
 
   .container{
     display: flex;
-    gap: spacer(xxl);
+    flex-direction: column;
+    gap: spacer-clamp(l, xxl);
+
+    @include breakpoint(md){
+      flex-direction: row;
+    }
 
     > *{
       flex: 1 1 50%;
@@ -18,6 +23,11 @@
     ul{
       @include clear-list;
       @include layout-grid(l);
+      text-align: center;
+
+      @include breakpoint(md){
+        text-align: start;
+      }
     }
 
     .icon-box{
@@ -33,7 +43,7 @@
 
     svg{
       color: color(default-white, custom);
-      font-size: font-size(h1)
+      font-size: responsive-font-size(4rem, 40)
     }
 
     h6{

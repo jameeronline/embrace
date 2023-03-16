@@ -3,20 +3,24 @@
 
 @use "sprucecss/scss/spruce" as *;
 
-.partners{
-  padding-block: spacer(xxl);
+.section-partners{
+  padding-block: spacer-clamp(l, xxl);
   background-color: color('bg-varient-1', 'custom');
 
-  &__header{
+  .partners-header{
     display: flex;
-    gap: spacer(m) + spacer(xs);
-    max-width: 60%;
-    margin-bottom: spacer(xxl);
-    row-gap: get-css-variable(--container-gap);
+    flex-direction: column;
+    gap: spacer-clamp(xs, m);
+    margin-bottom: spacer-clamp(l, xxl);
+    
+    @include breakpoint(md){
+      max-width: 60%;
+      flex-direction: row;
+    }
 
     h2{
       flex: 1 0 40%;
-      font-size: font-size(h1);
+      font-size: responsive-font-size(4rem, 40);
       margin: 0;
     }
 
@@ -26,7 +30,7 @@
     }
   }
 
-  &__logos{
+  .partners-logos{
     ul{
       list-style: none;
       padding: 0;
@@ -36,6 +40,11 @@
 
     li{
       margin-block-start: 0;
+      text-align: center;
+
+      a{
+        display: inline-block;
+      }
     }
   }
 }

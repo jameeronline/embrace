@@ -1,0 +1,21 @@
+//Modules
+@use "sass:map";
+@use "sprucecss/scss/spruce" as *;
+
+$text-alignment: (left, right, center, justify);
+
+@each $value in $text-alignment{
+    .text-#{$value}{
+        text-align: $value;
+    }
+}
+
+
+//Text Color Utilities
+$text-colors: map.get($colors, alert);
+
+@each $key, $value in $text-colors{
+    .text-#{$key}{
+        color: $value;
+    }
+}

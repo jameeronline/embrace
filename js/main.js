@@ -1,11 +1,14 @@
 document.addEventListener('DOMContentLoaded', function(){
   const bodyEl = document.querySelector('body');
-  const mobileToggle = document.querySelector('.site-navigation__mobile-menu');
   const mobileNav = document.querySelector('.site-navigation');
+
+  const mobileToggle = document.querySelector('.site-navigation__mobile-menu');
+  const mobileMenuClose = document.querySelector('.site-navigation__close');
 
   const mobileMenubackdrop = document.createElement('div');
   mobileMenubackdrop.classList.add('site-navigation__backdrop');
 
+  //Open Mobile menu
   mobileToggle.addEventListener('click', () => {
     mobileNav.classList.toggle('opened');
     bodyEl.classList.toggle('opened');
@@ -16,6 +19,14 @@ document.addEventListener('DOMContentLoaded', function(){
       mobileMenubackdrop.remove();
     }
   });
+
+  //Close Mobile Menu
+  mobileMenuClose.addEventListener('click', () => {
+    mobileNav.classList.remove('opened');
+    bodyEl.classList.remove('opened');
+    mobileMenubackdrop.remove();
+  });
+
 
 });
 

@@ -1,0 +1,21 @@
+//Modules
+@use "sass:map";
+@use "sprucecss/scss/spruce" as *;
+
+@each $key, $value in $spacers{
+    .padding-#{$key}{
+        padding: $value;
+    }
+    .padding-left-#{$key}{
+        padding-inline-start: $value;
+    }
+    .padding-right-#{$key}{
+        padding-inline-end: $value;
+    }
+    .padding-top-#{$key}{
+        padding-block-start: $value;
+    }
+    .padding-bottom-#{$key}{
+        padding-block-end: $value;
+    }
+}

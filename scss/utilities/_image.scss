@@ -1,23 +1,18 @@
 //Modules
+@use "sass:map";
+@use "sass:string";
 @use "sprucecss/scss/spruce" as *;
 
-// Image Utilities
-.img-rounded-sm{
-  border-radius: spacer(xxs);
-}
+$images-br: (
+  'sm': spacer(xxs),
+  'md': spacer(xs),
+  'lg': spacer(s),
+  'xl': spacer(m),
+  'full': 9999px,
+);
 
-.img-rounded-md{
-  border-radius: spacer(xs);
-}
-
-.img-rounded-lg{
-  border-radius: spacer(s);
-}
-
-.img-rounded-xl{
-  border-radius: spacer(m);
-}
-
-.img-rounded-full{
-  border-radius: 9999px;
+@each $key, $value in $images-br{
+  .img-rounded-#{$key}{
+    border-radius: $value;
+  }
 }

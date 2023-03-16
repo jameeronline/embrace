@@ -2,17 +2,22 @@
 
 .site{
 
-  &__header{
-    > .container{
+  &-header{
+    .container{
       display: flex;
       align-items: center;
       justify-content: space-between;
       padding-block: spacer(m);
-      padding-inline: 0;
+      padding-inline: spacer(m);
+
+      @include breakpoint(md){
+        padding-inline: 0;
+      }
     }
   }
 
   &-navigation{
+    $this: &;
     position: fixed;
     inset: 0;
     padding: spacer(m);
@@ -48,35 +53,35 @@
       display: flex;
       flex-direction: column;
       list-style: none;
-      align-items: center;
       padding-inline: 0;
       gap: spacer(s);
 
       @include breakpoint(md){
         flex-direction: row;
+        align-items: center;
         gap: spacer(l);
       }
-    }
 
-    &__item{
-      margin-block: 0;
+      @at-root #{$this}__item{
+        margin-block: 0;
 
-      a{
-        color: color(heading);
-        font-weight: $btn-font-weight;
-        display: inline-flex;
-        text-decoration: none;
-        padding: spacer(xxs) spacer(s);
+        a{
+          color: color(heading);
+          font-weight: $btn-font-weight;
+          display: flex;
+          text-decoration: none;
+          padding: spacer(xxs) spacer(s);
 
-        &:hover{
+          &:hover{
+            color: color(primary);
+            background-color: color(code-background);
+          }
+        }
+
+        &.active a{
           color: color(primary);
           background-color: color(code-background);
         }
-      }
-
-      &.active a{
-        color: color(primary);
-        background-color: color(code-background);
       }
     }
 
@@ -104,6 +109,12 @@
         background-color: color(primary);
       }
 
+      @include breakpoint(md){
+        display: none;
+      }
+    }
+
+    &__close{
       @include breakpoint(md){
         display: none;
       }

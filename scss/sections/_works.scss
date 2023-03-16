@@ -1,48 +1,51 @@
 //Build in Modules
 @use "sprucecss/scss/spruce" as *;
 
-.works{
+.section-works {
   $this: &;
   text-align: center;
-  padding-block: spacer(xxl);
+  padding-block: spacer-clamp(l, xxl);
 
-  &__content{
-    max-width: 70%;
+  &__content {
     margin-inline: auto;
 
-    h2{
-      font-size: font-size(h1);
+    @include breakpoint(md){
+      max-width: 70%;
+    }
+
+    h2 {
+      font-size: responsive-font-size(4rem, 30);
       margin: 0;
       margin-block-end: spacer(s);
     }
 
-    p{
+    p {
       font-size: font-size(lead, false);
       margin: 0;
       margin-block-end: spacer(l);
     }
 
-    img{
+    img {
       border-radius: spacer(l);
     }
   }
 
-  &__grid{
+  &__grid {
     @include layout-grid(m);
-    margin-block-end: spacer(l);
+    margin-block-end: spacer-clmap(m, l);
 
-    img{
+    img {
+      display: inline-block;
       border-radius: spacer(l);
-      margin-block-end: spacer(s);
     }
 
-    h6{
-      font-size: responsive-font-size(1.75rem);;
+    h6 {
+      font-size: responsive-font-size(1.75rem);
       margin: 0;
       margin-block-end: spacer(xs);
     }
 
-    p{
+    p {
       margin-block: 0;
       line-height: $line-height-md;
     }

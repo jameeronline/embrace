@@ -1,0 +1,15 @@
+//Modules
+@use "sass:map";
+@use "sprucecss/scss/spruce" as *;
+
+// Image Utilities
+@mixin img-rounded(
+    $key: m
+) {
+    @if map.has-key($spacers, $key){
+        $key: map.get($spacers, $key);
+        border-radius: $key;
+    } @else {
+        @error "Invalid border radius #{$key}"
+    }
+}

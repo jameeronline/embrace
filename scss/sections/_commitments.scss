@@ -1,23 +1,32 @@
 //Build in Modules
 @use "sprucecss/scss/spruce" as *;
 
-.commitments{
+.section-commitments{
   $this: &;
-  padding-block: spacer(xxl);
+  padding-block: spacer-clamp(l, xxl);
 
   .container{
     display: flex;
-    gap: spacer(xxl);
+    flex-direction: column;
+    gap: spacer-clamp(l, xxl);
 
-    > *{
-      flex: 1 1 50%;
+    @include breakpoint(md){
+      flex-direction: row;
+      > *{
+        flex: 1 1 50%;  
+      }
     }
   }
 
-  &__statics{
+  .commitments-statics{
     ul{
       @include clear-list;
       @include layout-grid(l);
+      text-align: center;
+
+      @include breakpoint(md){
+        text-align: inherit;
+      }
     }
 
     h6{
@@ -31,7 +40,7 @@
     }
   }
 
-  &__content{
+  .commitments-content{
     h2{
       font-size: font-size(h1);
       margin: 0;
