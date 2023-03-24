@@ -4,24 +4,24 @@
 
 .section-faq{
   $this: &;
-  padding-block: spacer(l);
-
-  @include breakpoint(md){
-    padding-block: spacer(xxl);
-  }
+  padding-block: spacer-clamp(l ,xxl);
 
   .container{
     display: flex;
     flex-direction: column;
-    gap: spacer(xl);
+    gap: spacer(l);
 
     @include breakpoint(md){
       flex-direction: row;
       justify-content: space-between;
-      gap: spacer(xxl);
+      gap: spacer-clamp(m ,xxl);
 
       > *{
-        flex: 1 1 50%;
+        flex: 1 1 60%;
+      }
+
+      > * + *{
+        flex: 1 1 40%;
       }
     }
   }
@@ -43,6 +43,14 @@
       font-size: font-size(lead);
       margin: 0;
       margin-block-end: spacer(s);
+    }
+
+    a{
+      font-weight: $heading-font-weight;
+
+      &:hover{
+        color: color(secondary)
+      }
     }
   }
 

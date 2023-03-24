@@ -39,9 +39,12 @@ $theme-font-size-base: 1rem;
       bg-varient-3: hsl(248, 27%, 17%),
       default-white: hsl(0 0% 100%),
       default-black: hsl(0 0% 0%),
+      bg-banner: hsl(248, 28%, 17%),
+      highlight-color: hsl(68, 100%, 57%)
     )
   ),
   //typography
+  $font-size-sm: 0.875rem,
   $font-sizes: (
     lead: $theme-font-size-base * 1.125,
   ),

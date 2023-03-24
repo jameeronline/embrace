@@ -14,11 +14,12 @@
 
     @include breakpoint(md){
       flex-direction: row;
+
+      > *{
+        flex: 1 1 50%;
+      }
     }
 
-    > *{
-      flex: 1 1 50%;
-    }
   }
 
   h2{
@@ -31,19 +32,23 @@
     $this: &;
     font-size: font-size(lead, false);
     margin: 0;
-    margin-block-end: spacer(l);
+    margin-block-end: spacer-clamp(m, l);
 
     @at-root #{$this}.lead{
       line-height: $line-height-sm;
-      font-size: responsive-font-size(2rem, 50);
+      font-size: responsive-font-size(1.5rem, 50);
       margin-block-end: spacer(s);
     }
   }
 
   &__gallery{
+    margin-inline: auto;
+
     ul{
       @include clear-list;
-      @include layout-grid(s, 10rem);
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: spacer(s);
     }
   }
 }

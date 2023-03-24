@@ -2,7 +2,6 @@
 @use "sprucecss/scss/spruce" as *;
 
 .section-works {
-  $this: &;
   text-align: center;
   padding-block: spacer-clamp(l, xxl);
 
@@ -23,20 +22,21 @@
       font-size: font-size(lead, false);
       margin: 0;
       margin-block-end: spacer(l);
-    }
-
-    img {
-      border-radius: spacer(l);
+      line-height: $line-height-md;
     }
   }
 
   &__grid {
     @include layout-grid(m);
-    margin-block-end: spacer-clmap(m, l);
+    margin-block-end: spacer(l);
+
+    figure{
+      margin: 0;
+    }
 
     img {
       display: inline-block;
-      border-radius: spacer(l);
+      border-radius: spacer-clamp(s, l, '2vw + 1rem');
     }
 
     h6 {

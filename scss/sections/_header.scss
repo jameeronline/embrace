@@ -8,11 +8,17 @@
       align-items: center;
       justify-content: space-between;
       padding-block: spacer(m);
-      padding-inline: spacer(m);
+      //padding-inline: spacer(m);
 
-      @include breakpoint(md){
-        padding-inline: 0;
-      }
+      // @include breakpoint(md){
+      //   padding-inline: 0;
+      // }
+    }
+  }
+
+  &__logo{
+    > span{
+      @include visually-hidden;
     }
   }
 
