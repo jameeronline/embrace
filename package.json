@@ -32,6 +32,7 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.3.0",
     "@splidejs/splide": "^4.1.4",
+    "aos": "^2.3.4",
     "sprucecss": "^1.2.1"
   }
 }

@@ -32,6 +32,17 @@
 </head>
 
 <body>
+  <section class="splide" aria-labelledby="carousel-heading">
+    <h2 id="carousel-heading">Splide Basic HTML Example</h2>
+
+    <div class="splide__track">
+      <ul class="splide__list">
+        <li class="splide__slide">Slide 01</li>
+        <li class="splide__slide">Slide 02</li>
+        <li class="splide__slide">Slide 03</li>
+      </ul>
+    </div>
+  </section>
   <header class="site-header">
       <div class="container">
         <a href="#" class="site__logo">
@@ -69,7 +80,7 @@
     <main>
       <section class="hero">
         <div class="container">
-          <div class="hero__description">
+          <div class="hero__description" data-aos="fade-down" data-aos-duration="1000" data-aos-easing="ease-in-out">
             <h1>We Take Care of Your Brand</h1>
             <p>Use this section to describe your company and the products you offer. You could share your company’s story and details about why you are in business.</p>
             <form action="" class="hero__form">
@@ -79,7 +90,7 @@
               <button class="btn btn--primary btn--lg btn--rounded">Lets Talk</button>
             </form>
           </div>
-          <figure class="hero__image">
+          <figure class="hero__image" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out">
             <img src="img/hero.png" alt="A description of the image." loading="lazy" decoding="async" srcset="img/hero.png 1x, img/hero@2x.png 2x, img/hero@3x.png 3x" />
           </figure>
         </div>
@@ -418,7 +429,6 @@
         </div>
       </div>
     </footer>
-
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>

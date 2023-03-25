@@ -22,3 +22,10 @@
 }());
 
 // Place any jQuery/helper plugins in here.
+import AOS from 'aos/dist/aos.js';
+AOS.init();
+
+// Splide JS.
+import Splide from '@splidejs/splide/dist/js/splide.min.js';
+new Splide('.splide').mount();
+

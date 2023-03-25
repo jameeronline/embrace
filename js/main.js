@@ -27,7 +27,6 @@ document.addEventListener('DOMContentLoaded', function(){
     mobileMenubackdrop.remove();
   });
 
-
 });
 
 
@@ -59,3 +58,8 @@ document.addEventListener('DOMContentLoaded', function(){
     });
   });
 })();
+
+
+
+
+
