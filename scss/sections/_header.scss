@@ -1,24 +1,19 @@
 @use "sprucecss/scss/spruce" as *;
 
 .site{
+  $this: &;
 
   &-header{
-    .container{
+    > .container{
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding-block: spacer(m);
+      padding-block: spacer-clamp(s, m);
       //padding-inline: spacer(m);
 
       // @include breakpoint(md){
       //   padding-inline: 0;
       // }
-    }
-  }
-
-  &__logo{
-    > span{
-      @include visually-hidden;
     }
   }
 
@@ -31,7 +26,7 @@
     max-width: spacer(xxxl) * 2;
     transform: translateX(-100%);
     border-bottom-right-radius: spacer(l);
-    box-shadow: 0 spacer(xxs) spacer(s) hsla(0 0% 0% / 10%);
+    box-shadow: 0 spacer(xxs) spacer(m) hsla(0 0% 0% / 10%);
     @include transition;
 
     @include breakpoint(md){
@@ -108,7 +103,7 @@
       width: spacer(l);
       height: spacer(l);
 
-      > span{
+      > *:not(.sr-only){
         display: block;
         width: calc(spacer(m) + spacer(xs));
         height: calc(spacer(xxs) / 2);
@@ -126,5 +121,27 @@
       }
     }
 
+    &__actions{
+      display: flex;
+      align-items: center;
+      gap: spacer(xs);
+    }
+  }
+
+  &__theme-toggle{
+    font-size: font-size(h3);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.25rem;
+    height: 2.25rem;
+  }
+
+  @at-root [data-theme-mode="light"] &__theme-dark{
+    display: none;
+  }
+
+  @at-root [data-theme-mode="dark"] &__theme-light{
+    display: none;
   }
 }

@@ -29,6 +29,24 @@ document.addEventListener('DOMContentLoaded', function(){
 
 });
 
+//Theme Switch
+(() => {
+  const themeSwitch = document.querySelector('.site__theme-toggle');
+
+  themeSwitch.addEventListener('click', () => {
+    let rootElement = document.documentElement;
+    let currentTheme = rootElement.getAttribute('data-theme-mode');
+
+    if(currentTheme == 'light'){
+      rootElement.setAttribute('data-theme-mode', 'dark');
+    }else{
+      rootElement.setAttribute('data-theme-mode', 'light');
+    }
+
+    return false;
+  });
+})();
+
 
 // Accordion List
 (() => {

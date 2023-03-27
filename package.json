@@ -16,8 +16,8 @@
   "scripts": {
     "sass:prod": "sass --load-path=node_modules --no-source-map --style=compressed scss:css",
     "sass:dev": "sass --load-path=node_modules scss:css",
-    "autoprefixer:dev": "postcss css/index.css --use autoprefixer -o css/index.css",
-    "build": "npm run sass:prod && npm run autoprefixer:dev && parcel build --public-url ./ index.html",
+    "autoprefixer": "postcss css/index.css --use autoprefixer -o css/index.css",
+    "build": "npm run sass:dev && npm run autoprefixer && parcel build --public-url ./ index.html",
     "dev": "parcel index.html --open",
     "start": "npm run build && npm run dev",
     "test": "echo \"Error: no test specified\" && exit 1"
