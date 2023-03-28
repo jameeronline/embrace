@@ -27,5 +27,9 @@ AOS.init();
 
 // Splide JS.
 import Splide from '@splidejs/splide/dist/js/splide.min.js';
-new Splide('.splide').mount();
+//new Splide('.splide').mount();
 
+
+//feather icons
+import feather from 'feather-icons/dist/feather';
+feather.replace();

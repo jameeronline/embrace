@@ -2,12 +2,16 @@
 @use "sprucecss/scss/spruce" as *;
 
 .section-banner{
-  padding-block: spacer-clamp(l ,xxl);
+  padding-block: spacer-clamp(m ,xxl);
+}
+
+.banner{
+  $this: &;
 
   &__wrapper{
     display: flex;
     flex-direction: column;
-    gap: spacer-clamp(xs, xl, '4vw');
+    gap: spacer-clamp(xxs, xl, '3vw');
     padding: spacer-clamp(m, l, '3vw');
     border-radius: spacer-clamp(s, l, '3vw');
     background-color: color(bg-banner, custom);
@@ -20,6 +24,7 @@
   }
 
   &__content{
+    flex: 0 0 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -32,9 +37,9 @@
       text-align: initial;
     }
 
-    h2{
+    @at-root #{$this}__title{
       color: color(default-white, custom);
-      font-size: responsive-font-size(3rem, 32);
+      font-size: responsive-font-size(3rem, 40);
       font-weight: 500;
       margin: 0;
       margin-block-end: spacer(s);
@@ -45,20 +50,21 @@
     }
   }
 
-  &__cirlce{
-    flex: none;
-    width: spacer-clamp(10rem, 22rem, '16vw');
-    height: spacer-clamp(10rem, 22rem, '16vw');
+  &__circle{
+    width: spacer-clamp(10rem, 20rem, '18vw');
+    height: spacer-clamp(10rem, 20rem, '18vw');
     border-radius: 9999px;
-    display: inline-flex;
+    align-self: center;
+    display: flex;
     align-items: center;
     justify-content: center;
     background-color: color(highlight-color, custom);
-    margin-inline: auto;
 
     svg{
       color: color(primary);
       font-size: responsive-font-size(10rem, 36);
+      width: spacer-clamp(6rem, 8rem, '12vw');
+      height: spacer-clamp(6rem, 8rem, '12vw');
     }
   }
 }

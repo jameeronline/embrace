@@ -50,6 +50,10 @@
       @include layout-grid(l);
       text-align: center;
 
+      > * + *{
+        margin: 0;
+      }
+
       @include breakpoint(sm){
         text-align: initial;
       }

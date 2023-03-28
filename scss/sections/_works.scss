@@ -4,48 +4,51 @@
 .section-works {
   text-align: center;
   padding-block: spacer-clamp(l, xxl);
+}
 
-  &__content {
+.work{
+  &-header {
     margin-inline: auto;
 
     @include breakpoint(md){
       max-width: 70%;
     }
 
-    h2 {
+    &__title{
       font-size: responsive-font-size(4rem, 30);
       margin: 0;
       margin-block-end: spacer(s);
     }
 
-    p {
+    &__desc{
       font-size: font-size(lead, false);
       margin: 0;
       margin-block-end: spacer(l);
-      line-height: $line-height-md;
     }
   }
 
-  &__grid {
+  &-grid {
     @include layout-grid(m);
     margin-block-end: spacer(l);
+  }
 
-    figure{
+  &-item{
+    &__wrapper{
       margin: 0;
     }
 
-    img {
+    &__media{
       display: inline-block;
       border-radius: spacer-clamp(s, l, '2vw + 1rem');
     }
 
-    h6 {
+    &__title{
       font-size: responsive-font-size(1.75rem);
       margin: 0;
       margin-block-end: spacer(xs);
     }
 
-    p {
+    &__desc{
       margin-block: 0;
       line-height: $line-height-md;
     }

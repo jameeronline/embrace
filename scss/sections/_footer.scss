@@ -119,7 +119,7 @@
   font-size: $font-size-sm;
   color: color(default-white, custom);
   background-color: color(secondary);
-  padding-block: spacer(m);
+  padding-block: spacer-clamp(xs, m, '3vw');
 
   .container{
     text-align: center;
@@ -132,31 +132,23 @@
   }
 
   p{
-    margin-block: spacer(s);
+    margin-block: spacer-clamp(xxs, s, '2vw');
   }
 
   ul{
-    @include set-css-variable((
-      --flex-direction: column,
-      --gap: spacer(s)
-    ));
-
     @include clear-list;
     display: flex;
-    flex-direction: get-css-variable(--flex-direction);
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: get-css-variable(--gap);
+    gap: spacer-clamp(xs, xl, '2vw');
 
-    @include breakpoint(sm){
-      @include set-css-variable((
-        --flex-direction: row,
-        --gap: spacer(xl)
-      ))
+    > * + *{
+      margin-block: 0;
     }
 
-    > li + li{
-      margin-block-start: 0;
+    @include breakpoint(sm){
+      flex-direction: row;
     }
 
     a{

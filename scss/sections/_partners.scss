@@ -1,13 +1,16 @@
 //Build in Modules
 @use "sass:color";
-
 @use "sprucecss/scss/spruce" as *;
 
 .section-partners{
   padding-block: spacer-clamp(l, xl);
   background-color: color('bg-varient-1', 'custom');
+}
 
-  @at-root .partners-header{
+.partners{
+  $this: &;
+
+  &__header{
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -27,6 +30,7 @@
       flex: none;
       font-size: responsive-font-size(2.5rem);
       margin-block: 0;
+
       @include breakpoint(md){
         width: 40%;
       }
@@ -46,15 +50,18 @@
     }
   }
 
-  @at-root .partners-logos{
+  &__grid{
     ul{
       @include clear-list;
       @include layout-grid(s);
       row-gap: spacer(xl);
+
+      > * + *{
+        margin-block-start: 0;
+      }
     }
 
     li{
-      margin-block-start: 0;
       text-align: center;
 
       a{

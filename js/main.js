@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function(){
   const bodyEl = document.querySelector('body');
   const mobileNav = document.querySelector('.site-navigation');
 
-  const mobileToggle = document.querySelector('.site-navigation__mobile-menu');
+  const mobileToggle = document.querySelector('.site-actions__mobile-menu');
   const mobileMenuClose = document.querySelector('.site-navigation__close');
 
   const mobileMenubackdrop = document.createElement('div');
@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
 //Theme Switch
 (() => {
-  const themeSwitch = document.querySelector('.site__theme-toggle');
+  const themeSwitch = document.querySelector('.site-actions__theme-toggle');
 
   themeSwitch.addEventListener('click', () => {
     let rootElement = document.documentElement;

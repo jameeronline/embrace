@@ -1,31 +1,31 @@
 @use "sprucecss/scss/spruce" as *;
 
 .site{
-  $this: &;
 
   &-header{
-    > .container{
+    .container{
       display: flex;
       align-items: center;
       justify-content: space-between;
       padding-block: spacer-clamp(s, m);
-      //padding-inline: spacer(m);
-
-      // @include breakpoint(md){
-      //   padding-inline: 0;
-      // }
     }
+  }
+
+  &-logo{
+    display: inline-flex;
+    align-items: center;
   }
 
   &-navigation{
     $this: &;
-    position: fixed;
+
     inset: 0;
+    position: fixed;
     padding: spacer(m);
     background-color: color(background);
-    max-width: spacer(xxxl) * 2;
+    max-width: 20rem;
     transform: translateX(-100%);
-    border-bottom-right-radius: spacer(l);
+    border-bottom-right-radius: spacer-clamp(m, xl);
     box-shadow: 0 spacer(xxs) spacer(m) hsla(0 0% 0% / 10%);
     @include transition;
 
@@ -44,27 +44,28 @@
     }
 
     &__backdrop{
-      position: fixed;
       inset: 0;
-      background-color: hsla(0 0% 0% / 20%);
       z-index: 0;
+      position: fixed;
+      background-color: hsla(0 0% 0% / 60%);
     }
 
     ul{
+      @include clear-list;
       display: flex;
       flex-direction: column;
-      list-style: none;
-      padding-inline: 0;
-      gap: spacer(s);
+      gap: spacer-clamp(xxs, l, '1vw');
+
+      > * + *{
+        margin-block: 0;
+      }
 
       @include breakpoint(md){
         flex-direction: row;
-        align-items: center;
-        gap: spacer(l);
       }
 
       @at-root #{$this}__item{
-        margin-block: 0;
+        $this: &;
 
         a{
           color: color(heading);
@@ -77,20 +78,49 @@
             color: color(primary);
             background-color: color(code-background);
           }
-        }
 
-        &.active a{
-          color: color(primary);
-          background-color: color(code-background);
+          @at-root #{$this}.active a{
+            color: color(primary);
+            background-color: color(code-background);
+          }
         }
       }
     }
+
+    &__close{
+      @include breakpoint(md){
+        display: none;
+      }
+    }
+  }
+
+  &-actions{
+    display: flex;
+    align-items: center;
+    gap: spacer-clamp(xxs, xs, '1vw');
 
     &__cta{
       display: none;
 
       @include breakpoint(md){
         display: initial;
+      }
+    }
+
+    &__theme-toggle{
+      font-size: font-size(h3);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 2.25rem;
+      height: 2.25rem;
+
+      @at-root [data-theme-mode="light"] .theme-dark{
+        display: none;
+      }
+
+      @at-root [data-theme-mode="dark"] .theme-light{
+        display: none;
       }
     }
 
@@ -104,9 +134,9 @@
       height: spacer(l);
 
       > *:not(.sr-only){
+        width: 2rem;
+        height: 0.125rem;
         display: block;
-        width: calc(spacer(m) + spacer(xs));
-        height: calc(spacer(xxs) / 2);
         background-color: color(primary);
       }
 
@@ -114,34 +144,5 @@
         display: none;
       }
     }
-
-    &__close{
-      @include breakpoint(md){
-        display: none;
-      }
-    }
-
-    &__actions{
-      display: flex;
-      align-items: center;
-      gap: spacer(xs);
-    }
-  }
-
-  &__theme-toggle{
-    font-size: font-size(h3);
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 2.25rem;
-    height: 2.25rem;
-  }
-
-  @at-root [data-theme-mode="light"] &__theme-dark{
-    display: none;
-  }
-
-  @at-root [data-theme-mode="dark"] &__theme-light{
-    display: none;
   }
 }
