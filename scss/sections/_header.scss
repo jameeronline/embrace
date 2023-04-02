@@ -1,17 +1,15 @@
 @use "sprucecss/scss/spruce" as *;
 
 .site{
-
-  &-header{
-    .container{
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding-block: spacer-clamp(s, m);
-    }
+  &__inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-block: spacer-clamp(s, m);
   }
 
   &-logo{
+    color: color(heading);
     display: inline-flex;
     align-items: center;
   }
@@ -24,6 +22,7 @@
     padding: spacer(m);
     background-color: color(background);
     max-width: 20rem;
+    right: 0;
     transform: translateX(-100%);
     border-bottom-right-radius: spacer-clamp(m, xl);
     box-shadow: 0 spacer(xxs) spacer(m) hsla(0 0% 0% / 10%);
@@ -38,16 +37,16 @@
       background-color: transparent;
     }
 
-    &.opened{
-      z-index: 1;
-      transform: translateX(0);
-    }
-
-    &__backdrop{
+    @at-root .opened #{$this}__backdrop{
       inset: 0;
       z-index: 0;
       position: fixed;
       background-color: hsla(0 0% 0% / 60%);
+    }
+
+    &.opened{
+      z-index: 1;
+      transform: translateX(0);
     }
 
     ul{
@@ -84,12 +83,6 @@
             background-color: color(code-background);
           }
         }
-      }
-    }
-
-    &__close{
-      @include breakpoint(md){
-        display: none;
       }
     }
   }

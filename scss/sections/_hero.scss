@@ -1,54 +1,58 @@
 //Build in Modules
 @use "sass:color";
-
 @use "sprucecss/scss/spruce" as *;
 
+
 .hero{
-  .container{
+  &__inner{
     display: flex;
     flex-direction: column-reverse;
-    padding-block: spacer-clamp(m, xl);;
     gap: spacer-clamp(l, xl);
 
     @include breakpoint(md){
       flex-direction: row;
-      gap: calc(spacer(xxl) + spacer(xl));
+      gap: 0;
+
+      > *{
+        flex: 0 0 50%;
+      }
     }
   }
 
-  &__description{
-    flex: 1 0;
+  &__content{
+    text-align: center;
 
     @include breakpoint(md){
       display: flex;
+      text-align: initial;
       flex-direction: column;
       justify-content: center;
-    }
-
-    h1{
-      font-size: responsive-font-size(3rem);
-      line-height: 1.2;
-      margin-block-start: 0;
-
-      @include breakpoint(md){
-        font-size: responsive-font-size(5.375rem, 7);
-      }
-    }
-
-    p{
-      line-height: 2;
+      padding-inline-end: spacer-clamp(xl, xxxl);
     }
   }
 
+  &__title{
+    font-size: responsive-font-size(5.75rem, 48, '5vw + 1rem');
+    line-height: $line-height-sm;
+    margin-block-start: 0;
+    margin-block-end: spacer-clamp(s, l);
+  }
+
+  &__description{
+    margin: 0;
+    line-height: $line-height-lg;
+  }
+
   &__image{
-    flex: 1 0;
+    align-self: center;
+    margin: 0;
   }
 
   &__form{
     display: flex;
     flex-direction: column;
     gap: spacer(xs);
-    margin-top: spacer(l);
+    margin-block-start: spacer-clamp(s, l);
 
     @include breakpoint(sm){
       flex-direction: row;
@@ -57,7 +61,6 @@
   }
 
   .form{
-
     &-group{
       flex: 1 0;
     }

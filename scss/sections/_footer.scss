@@ -35,6 +35,7 @@
   }
 
   &__logo{
+    color: color(heading);
     margin-block-end: spacer(s);
   }
 
@@ -56,7 +57,7 @@
   }
 
   address{
-    color: color(default-black, custom);
+    color: color(heading);
     font-style: normal;
   }
 
@@ -96,7 +97,7 @@
 
     a{
       @include set-css-variable((
-        --text-color: color(default-black, custom),
+        --text-color: color(heading),
         --text-decoration: none
       ));
 

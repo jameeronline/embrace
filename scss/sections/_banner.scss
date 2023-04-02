@@ -1,14 +1,10 @@
 //Build in Modules
 @use "sprucecss/scss/spruce" as *;
 
-.section-banner{
-  padding-block: spacer-clamp(m ,xxl);
-}
-
 .banner{
   $this: &;
 
-  &__wrapper{
+  &__inner{
     display: flex;
     flex-direction: column;
     gap: spacer-clamp(xxs, xl, '3vw');

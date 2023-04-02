@@ -1,60 +1,58 @@
 //Build in Modules
 @use "sass:color";
 @use "sprucecss/scss/spruce" as *;
-
-.section-partners{
-  padding-block: spacer-clamp(l, xl);
-  background-color: color('bg-varient-1', 'custom');
-}
+@use "../base";
 
 .partners{
   $this: &;
+  background-color: color('bg-varient-1', 'custom');
 
-  &__header{
+  &__content{
     display: flex;
-    align-items: center;
     flex-direction: column;
     gap: spacer-clamp(xs, 2rem);
     margin-bottom: spacer-clamp(l, xxl);
 
     @include breakpoint(md){
-      max-width: 80%;
+      max-width: 72%;
+      align-items: center;
       flex-direction: row;
     }
 
     @include breakpoint(lg){
       max-width: 60%;
     }
+  }
 
-    h2{
-      flex: none;
-      font-size: responsive-font-size(2.5rem);
-      margin-block: 0;
+  &__title{
+    @extend %section-heading-2;
+    flex: none;
+    margin-block: 0;
 
-      @include breakpoint(md){
-        width: 40%;
-      }
+    @include breakpoint(md){
+      max-width: 40%;
     }
+  }
 
-    p{
-      flex: none;
-      margin: 0;
+  &__desc{
+    flex: none;
+    margin: 0;
+    margin-inline: auto;
 
-      @include breakpoint(md){
-        width: 80%;
-      }
-
-      @include breakpoint(lg){
-        width: 60%;
-      }
+    @include breakpoint(md){
+      max-width: 60%;
     }
   }
 
   &__grid{
     ul{
       @include clear-list;
-      @include layout-grid(s);
-      row-gap: spacer(xl);
+      //@include layout-grid(s);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      column-gap: spacer-clamp(l, xxxl);
+      row-gap: spacer-clamp(m, xl);
 
       > * + *{
         margin-block-start: 0;
@@ -63,10 +61,10 @@
 
     li{
       text-align: center;
+    }
 
-      a{
-        display: inline-block;
-      }
+    a{
+      display: inline-block;
     }
   }
 }

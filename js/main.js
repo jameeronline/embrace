@@ -4,9 +4,10 @@ document.addEventListener('DOMContentLoaded', function(){
 
   const mobileToggle = document.querySelector('.site-actions__mobile-menu');
   const mobileMenuClose = document.querySelector('.site-navigation__close');
+  const mobileMenubackdrop = document.querySelector('.site-navigation__backdrop');
 
-  const mobileMenubackdrop = document.createElement('div');
-  mobileMenubackdrop.classList.add('site-navigation__backdrop');
+  //const mobileMenubackdrop = document.createElement('div');
+  //mobileMenubackdrop.classList.add('site-navigation__backdrop');
 
   //Open Mobile menu
   mobileToggle.addEventListener('click', () => {
@@ -21,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function(){
   });
 
   //Close Mobile Menu
-  mobileMenuClose.addEventListener('click', () => {
+  mobileMenubackdrop.addEventListener('click', () => {
     mobileNav.classList.remove('opened');
     bodyEl.classList.remove('opened');
     mobileMenubackdrop.remove();

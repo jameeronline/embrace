@@ -1,5 +1,6 @@
 //Build in Modules
 @use "sprucecss/scss/spruce" as *;
+@use "../base";
 
 .section-commitments{
   padding-block: spacer-clamp(l, xxl);
@@ -43,7 +44,7 @@
 
   .commitments-content{
     h2{
-      font-size: responsive-font-size(2.5rem);
+      @extend %section-heading-2;
       margin: 0;
       margin-block-end: spacer(s);
     }

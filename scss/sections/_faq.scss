@@ -1,6 +1,7 @@
 //Build in Modules
 @use "sass:color";
 @use "sprucecss/scss/spruce" as *;
+@use "../base";
 
 .section-faq{
   $this: &;
@@ -34,7 +35,7 @@
     }
 
     h2{
-      font-size: responsive-font-size(2.5rem);
+      @extend %section-heading-2;
       margin: 0;
       margin-block-end: spacer(s);
     }

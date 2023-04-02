@@ -6,7 +6,7 @@
 
 .container {
   --container-width: #{$container-width};
-  --container-gap: #{spacer-clamp(m, l)};
+  --container-gap: #{spacer-clamp(s, l)};
 
   @include layout-center(
     var(--container-gap),

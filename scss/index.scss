@@ -15,6 +15,7 @@ $body-font-color: hsl(0, 0%, 40%);
 
 $theme-font-size-base: 1rem;
 
+$theme-spacer: 1rem;
 
 @use "sprucecss/scss/spruce" as * with (
   //Settings
@@ -49,7 +50,11 @@ $theme-font-size-base: 1rem;
     lead: $theme-font-size-base * 1.125,
   ),
   //Container max-width
-  $container-width: $theme-container-width
+  $container-width: $theme-container-width,
+  $spacer: $theme-spacer,
+  $spacers: (
+    xxl:  $theme-spacer * 5
+  )
 );
 
 //Typography
@@ -59,11 +64,12 @@ $font-family-heading: $font-family-base;
 //Vendor or Plugins
 @use "vendor" as *;
 @use "components" as *;
+@use "base" as *;
 @use "sections" as *;
 @use "utilities" as *;
 
-//Themes
 
+//Themes
 @use "themes" as *;
 
 

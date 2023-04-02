@@ -1,0 +1,13 @@
+@use 'sprucecss/scss/spruce' as *;
+
+%section-heading-2{
+  font-size: responsive-font-size(2.5rem, 28);
+}
+
+%section-spacing{
+  padding-block: spacer-clamp(l, xl);
+}
+
+.section{
+  padding-block: spacer-clamp(m, xxl);
+}
