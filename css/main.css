@@ -261,3 +261,13 @@ textarea {
   }
 }
 
+
+
+::placeholder {
+  color: gray;
+}
+
+.logo {
+  background: image-set(url(../img/work1.png) 2x, url(../img/work1.png) 1x);
+}
+
